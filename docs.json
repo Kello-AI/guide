@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Kello user guide",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#f5eff5",
+    "dark": "#9b5d98"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://kello.ai/assets/icons/favicon/favicon.ico",
   "navigation": {
     "tabs": [
       {
