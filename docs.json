@@ -38,8 +38,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Guide",
+          "href": "https://guide.kello.ai",
           "icon": "book-open-cover"
         },
         {
@@ -49,7 +49,7 @@
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://kello.ai/blog",
           "icon": "newspaper"
         }
       ]
@@ -63,13 +63,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@kello.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://kello.ai/app"
     }
   },
   "footer": {
