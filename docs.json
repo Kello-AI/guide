@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Kello user guide",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#9b5d98",
     "light": "#f5eff5",
     "dark": "#9b5d98"
   },
@@ -30,26 +30,6 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
