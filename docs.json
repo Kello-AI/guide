@@ -22,14 +22,22 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Platform",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "platform/analytics",
+              "platform/collections",
+              "platform/code_analysis",
+              "platform/talent_pool",
+              "platform/search"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/gmail",
+              "integrations/google_forms",
+              "integrations/linkedin_easy_apply"
             ]
           }
         ]
@@ -41,11 +49,6 @@
           "anchor": "Guide",
           "href": "https://guide.kello.ai",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
         },
         {
           "anchor": "Blog",
