@@ -24,10 +24,10 @@
           {
             "group": "Platform",
             "pages": [
+              "platform/talent_pool",
               "platform/analytics",
               "platform/collections",
               "platform/code_analysis",
-              "platform/talent_pool",
               "platform/search"
             ]
           },
