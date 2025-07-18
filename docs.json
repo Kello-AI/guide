@@ -27,7 +27,6 @@
               "platform/talent_pool",
               "platform/analytics",
               "platform/code_analysis",
-              "platform/collections",
               "platform/search"
             ]
           },
