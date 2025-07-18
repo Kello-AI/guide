@@ -1,37 +1,78 @@
 ---
-title: 'Email Inbounds'
-description: 'Sync candidates who cold emailed you to Kello'
-icon: 'envelope'
+title: "Gmail Inbox Integration "
+description: "Bring order to inbox chaos.  
+Let Kello scan your email for job applicants—so you don’t have to."
+icon: "envelope"
+sidebarTitle: "Gmail Inbox Integration"
 ---
 
-## Email Inbounds - Gmail integration
+## The Problem: Job Applications in Your Inbox = Total Mayhem
 
-### Inline Code
+If you’ve ever posted a job online, you know what happens next:\
+Your inbox gets swarmed.
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+- Cold emails from interested candidates
+- Resumes from friends-of-friends
+- Referrals sent by coworkers
+- Random applications from alumni networks
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
+Some even skip the job portal entirely and go straight to your inbox—especially if you or your team dropped an email address in the job post (oops).
 
-### Code Block
+The result?\
+A messy inbox, siloed candidates, and team members forwarding resumes like it's 2009.
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+## The Fix: Kello \+ Gmail = Inbox Talent Scanner
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+We built a Gmail integration that automatically scans your inbox for job applicants, extracts their profiles, and pipes them into your Kello talent pool.
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+Think of it as a helpful recruiter who sifts through your email and adds legit candidates to your pipeline—without reading anything else.
+
+### What It Does:
+
+- ✅ Finds emails that **are definitely job applications**
+- ✅ Parses resumes from **PDFs, DOCX**, or plain text
+- ✅ Adds qualified candidates directly to your **Kello Talent Pool**
+- ✅ Keeps them private or shareable—with your choice of visibility
+
+## What We Actually Look At
+
+We’re _not_ reading your email.\
+We’re using Gmail’s API to **strictly filter** for messages that match these conditions:
+
+### 📥 We look for:
+
+- Emails from **@gmail.com**, **@yahoo.com**, or **academic domains** like `*.ac.in`
+- Emails that include a **.pdf** or **.docx** attachment
+- Body text with common phrases like: `“applying for the position”,“attached my resume”,“seeking opportunity”,“please consider my application”`
+
+### 🛑 We skip:
+
+- Any email that’s a **reply thread**
+- Emails with keywords like: `“Partnership opportunity”, “Business proposal”, “Let’s collaborate”`
+
+## Full Control Over Who Sees What
+
+Once a candidate is pulled in from your inbox, they’ll show up in your **Talent Pool** on Kello.\
+From there, you can:
+
+- Keep them **private to just you**
+- Share with a **select group of teammates**
+- Or make them visible to your **entire hiring org**
+
+No messy forwards or Slack threads required.
+
+## How We Keep Your Inbox Safe
+
+We get it—granting inbox access is sensitive. Here's how we keep things safe and transparent:
+
+- 🔐 **Read-only Access**: We don’t modify, delete, or send anything.
+- 🎯 **Hyper-Specific Filters**: We only look for candidate emails—nothing else.
+- 🕵️ **No snooping**: No access to threads, newsletters, or personal messages.
+- 💥 **Full Revocation Anytime**: You can disconnect Gmail or delete all parsed data whenever you want.
+- ✅ **Google Verified**: Kello has passed **Google’s CASA Tier 2 Security Assessment**, the highest level of audit for apps that access Gmail data.
+
+## Got Questions? Feedback? Paranoia?
+
+Totally fair. If you want to talk through how this works before enabling it, just ping us from the chat bubble inside Kello or email `security@kello.ai`.
+
+Ready when you are :)
