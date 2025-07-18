@@ -1,11 +1,51 @@
 ---
 title: "Gmail Inbox Integration "
-description: "Bring order to inbox chaos. "
+description: "Safe, respectful, read-only access to your inbox—to help you hire faster."
 icon: "envelope"
 sidebarTitle: "Gmail Inbox Integration"
 ---
 
-## The Problem: Job Applications in Your Inbox = Total Mayhem
+## First, Let’s Talk About Trust
+
+We know what you’re thinking:
+
+> _“Wait. You want access to my Gmail inbox?”_
+
+Totally fair. Here’s what you need to know—right up front.
+
+### ✅ We do **not** read your whole inbox.
+
+We don’t browse through your emails. We use **Gmail’s official API** to apply **very specific filters** that only look for messages likely to be job applications. Everything else is ignored.
+
+### 🔍 We only scan for candidate emails.
+
+Specifically:
+
+- Emails from @gmail.com, @yahoo.com, or academic domains like `*.ac.in`
+- Messages with resumes attached (.pdf or .docx)
+- Emails containing phrases like “applying for the position” or “attached my resume”
+
+No newsletters, no personal email, no sales spam.
+
+### 🔐 We only ask for **read-only access**.
+
+We don’t modify, label, delete, or send emails. Your inbox stays exactly the way you left it.
+
+### 👋 You can disconnect anytime.
+
+You’re always in control. Revoke access or delete your data from Kello—whenever you want, no questions asked.
+
+### ✅ We’re Google Verified.
+
+Kello has passed **Google’s CASA Tier 2 security audit**—the most in-depth security and privacy assessment Google requires for apps that access Gmail. We did the work to earn your trust.
+
+---
+
+Now that we’ve got that out of the way, let’s explain **why** we built this and **how it helps.**
+
+---
+
+## Why This Exists: Inbox Chaos for Hiring Teams
 
 If you’ve ever posted a job online, you know what happens next:\
 Your inbox gets swarmed.
@@ -20,7 +60,7 @@ Some even skip the job portal entirely and go straight to your inbox—especiall
 The result?\
 A messy inbox, siloed candidates, and team members forwarding resumes like it's 2009.
 
-## The Fix: Kello \+ Gmail = Inbox Talent Scanner
+## What This Integration Does
 
 We built a Gmail integration that automatically scans your inbox for job applicants, extracts their profiles, and pipes them into your Kello talent pool.
 
@@ -33,22 +73,6 @@ Think of it as a helpful recruiter who sifts through your email and adds legit c
 - Adds qualified candidates directly to your **Kello Talent Pool**
 - Keeps them private or shareable—with your choice of visibility
 
-## What We Actually Look At
-
-We’re _not_ reading your email.\
-We’re using Gmail’s API to **strictly filter** for messages that match these conditions:
-
-### 📥 We look for:
-
-- Emails from **@gmail.com**, **@yahoo.com**, or **academic domains** like `*.ac.in`
-- Emails that include a **.pdf** or **.docx** attachment
-- Body text with common phrases like: `“applying for the position”,“attached my resume”,“seeking opportunity”,“please consider my application”`
-
-### 🛑 We skip:
-
-- Any email that’s a **reply thread**
-- Emails with keywords like: `“Partnership opportunity”, “Business proposal”, “Let’s collaborate”`
-
 ## Full Control Over Who Sees What
 
 Once a candidate is pulled in from your inbox, they’ll show up in your **Talent Pool** on Kello.\
@@ -60,18 +84,37 @@ From there, you can:
 
 No messy forwards or Slack threads required.
 
-## How We Keep Your Inbox Safe
-
-We get it—granting inbox access is sensitive. Here's how we keep things safe and transparent:
-
-- 🔐 **Read-only Access**: We don’t modify, delete, or send anything.
-- 🎯 **Hyper-Specific Filters**: We only look for candidate emails—nothing else.
-- 🕵️ **No snooping**: No access to threads, newsletters, or personal messages.
-- 💥 **Full Revocation Anytime**: You can disconnect Gmail or delete all parsed data whenever you want.
-- ✅ **Google Verified**: Kello has passed **Google’s CASA Tier 2 Security Assessment**, the highest level of audit for apps that access Gmail data.
-
 ## Got Questions? Feedback? Paranoia?
 
 Totally fair. If you want to talk through how this works before enabling it, just ping us from the chat bubble inside Kello or email `security@kello.ai`.
 
 Ready when you are :)
+
+---
+
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="Does Kello read my entire inbox?" icon="sparkles">
+    No. We never read your full inbox. Kello uses Gmail’s official API to apply very specific filters that only target potential job application emails. Everything else is ignored.
+  </Accordion>
+  <Accordion title="Can I see what Kello will scan before I connect Gmail?" icon="sparkles">
+    Yes. We offer a Gmail link with **pre-applied filters **before you give access, so you can preview the exact emails Kello would access. No surprises.
+  </Accordion>
+  <Accordion title="What kind of access does Kello have to my Gmail?">
+    Kello has **read-only access**.\
+    We don’t write, send, delete, or label anything in your inbox. Your emails stay exactly how they are.
+  </Accordion>
+  <Accordion title="Does Kello store my emails or attachments?">
+    Only candidate emails that match our filters are parsed and stored in your Kello talent pool. We do not store your full inbox, or any unrelated emails or metadata.
+  </Accordion>
+  <Accordion title="What if I change my mind? Can I disconnect Gmail?">
+    Absolutely. You can revoke Gmail access at any time from your [**Google Account permissions**](https://myaccount.google.com/connections?continue=https%3A%2F%2Fmyaccount.google.com%2Fdata-and-privacy) or within Kello’s **Integrations settings**. You can also delete any data previously imported.
+  </Accordion>
+  <Accordion title="Is this integration verified by Google?">
+    Yes. Kello has passed **Google’s CASA Tier 2 security audit**—a comprehensive review of how we handle Gmail data, including security practices, infrastructure, and privacy policies. It’s the highest level of scrutiny Google requires for Gmail-based apps.
+  </Accordion>
+  <Accordion title="What happens if I get personal emails that match the filters?">
+    It’s very rare, but possible. If a personal email mimics the structure of a job application (e.g., resume attached, relevant phrases) and has a resume attached in the email, Kello may parse it. You can delete or hide any such records in Kello—and let us know if you'd like to refine your filter.
+  </Accordion>
+</AccordionGroup>
