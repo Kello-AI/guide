@@ -26,8 +26,8 @@
             "pages": [
               "platform/talent_pool",
               "platform/analytics",
-              "platform/collections",
               "platform/code_analysis",
+              "platform/collections",
               "platform/search"
             ]
           },

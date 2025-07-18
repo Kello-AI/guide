@@ -1,0 +1,140 @@
+---
+title: "Code Sight"
+icon: "fa-code"
+description: "A smart, unbiased snapshot of a candidate’s real coding work"
+sidebarTitle: "Code Sight"
+---
+
+Hiring great engineers shouldn't mean endless problem statements and evaluation loops.\
+**Code Sight** is our way of solving that — by doing what every hiring manager wishes they had time for: actually reading the candidate’s code.
+
+## The problem
+
+Let’s be honest. For engineering roles, we all want to hire based on real skill. Which usually means sending a problem statement, waiting for submissions, reviewing code, and hoping the best candidates even bother to apply in the first place.
+
+But there's a catch:
+
+- **Reviewing code takes serious bandwidth** — not scalable when you’ve got 100\+ applicants
+- **Top candidates often don’t want to do take-homes** — especially when their GitHub speaks for itself
+- **It's hard to evaluate real-world engineering skills from a coding test alone**
+
+Meanwhile, great candidates are already showing us their work — in GitHub repos, public projects, and open-source contributions. They expect us to look.
+
+**Code Sight** does exactly that. It reviews candidates’ real code for you — deeply, objectively, and at scale.
+
+## What Code Sight does
+
+**Code Sight reviews a candidate’s actual code** so you don’t have to — and gives you a clean report anyone on the team can understand.
+
+For every engineering applicant who shares a GitHub profile or links to projects, we:
+
+- Scan their **public GitHub repositories**
+- Analyze only the code **they actually wrote**
+- Run deep scans to check for quality, hygiene, and test discipline
+- Summarize the findings in plain English — not dev-speak
+
+Think of it as a “code-based resume,” but way more honest.
+
+## What you’ll see
+
+### 🛠️ Tech Stack & Experience
+
+For each candidate, you’ll see:
+
+- **Languages, tools & frameworks** they’ve used (e.g. Python, TypeScript, AWS, LangChain)
+- **How much they’ve coded** in each (line counts & project counts)
+- **When they last used it**
+- **Estimated real-world experience** (we track active 14-day streaks across time)
+
+<Tip>
+  We also highlight **matches with the job requirements** so you know who’s already working with your stack.
+</Tip>
+
+![image.png](/images/image.png)
+
+## 📦 Project-by-project insights
+
+For each project the candidate has talked about in their resume, we run a deep scan and show:
+
+#### ✅ Pass / Fail Quality Gate
+
+A simple signal that tells you:
+
+> Is this project production-ready?\
+> This is computed from a deep scan of their codebase (using SonarQube \+ our own models).
+
+Great for quick filtering.
+
+#### Code Quality Ratings
+
+- **Maintainability rating**: Is the code modular and clean?
+- **Reliability rating**: Are there signs of bugs or runtime risks?
+- **Security rating**: Any red flags around vulnerable patterns?
+- **Critical issues count**: High \+ blocker issues
+
+| Rating  | What It Means                | Should You Be Concerned?    |
+| :------ | :--------------------------- | :-------------------------- |
+| **A**   | Clean, production-level code | ✅ No concerns               |
+| **B**   | Mostly solid, some flaws     | ⚠️ Worth a closer look      |
+| **C–E** | Technical debt, risky        | 🚫 May need to deprioritize |
+
+#### Code Hygiene
+
+- **Commit Hygiene**: Are the commits small and descriptive (verb \+ scope)?
+- **Test Discipline**: Did the candidate write any tests?
+- **Comment Hygiene**: Are comments clear, helpful, and present?
+- **Duplicate Code**: How much code is repeated unnecessarily?
+
+![Kello Code Sight Repo Analysis Pn](/images/kello_code_sight_repo_analysis.png)
+
+## 🔥 How to use this in hiring
+
+Code Sight is built for speed **and** depth.\
+Here’s how teams use it today:
+
+- **Recruiters** use the tech stack \+ Quality Gate to do first-round shortlisting
+- **Hiring managers** dive into the code hygiene and quality metrics for signal
+- **HR teams** can now present “portfolio strength” alongside resumes
+
+This lets you skip the problem statement (or reserve it for final round), and focus on candidates who’ve already proven they can code.
+
+---
+
+## Current Limitations
+
+- We don’t scan **private GitHub repos**
+- We don’t analyze **Codeforces / Leetcode** accounts yet (coming soon)
+- We don’t currently evaluate **design patterns or system design skills** from code
+
+But for writing clean, maintainable, real-world code — we’ve got you covered.
+
+---
+
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="How we compute it" icon="sparkles">
+    ## How we compute it\!
+
+    - Code quality metrics are derived from **SonarQube** \+ our in-house code models
+    - Tech stack & languages are inferred **only from the candidate’s commits** (not the whole repo)
+    - We analyze **only public repos** — no access to private contributions yet
+
+    Accuracy-wise, we go out of our way to avoid false credit or assumptions. You’ll only see what the candidate actually wrote.
+  </Accordion>
+  <Accordion title="Do candidates need to do anything to be evaluated?" icon="sparkles">
+    Nope. As long as they share a public GitHub profile or repo link in their application or resume, we take it from there.
+  </Accordion>
+  <Accordion title="How do you determine what code the candidate wrote?">
+    We only consider commits **authored by the candidate** — based on their GitHub username. We ignore contributions made by others in the repo.
+  </Accordion>
+  <Accordion title="What does the “Quality Gate” mean?">
+    It’s a quick **Pass / Fail** status based on SonarQube’s industry-standard metrics (code quality, bugs, vulnerabilities, etc.). Think of it like a basic health check for each project.
+  </Accordion>
+  <Accordion title="What does “Ownership” mean in a project?">
+    We estimate what percentage of the project was written by the candidate — e.g. 100% (fully built), 50% (collaborated), or forked/copied.
+  </Accordion>
+  <Accordion title="How do you calculate “equivalent experience”?">
+    For each tech (e.g. Python), we break GitHub activity into **14-day blocks**. If a candidate commits code using that tech within a 14-day span, we count that as 2 weeks of experience. We sum these to estimate hands-on time.
+  </Accordion>
+</AccordionGroup>
