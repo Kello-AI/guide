@@ -41,8 +41,9 @@
 					"group": "ATS",
 					"icon": "server",
 					"pages": [
-						"Lever",
-						"Greenhouse"
+                        "integrations/ats/overview",
+						"integrations/ats/lever",
+						"integrations/ats/greenhouse"
 					]
 				}
             ]
