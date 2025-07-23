@@ -36,7 +36,15 @@
               "integrations/overview",
               "integrations/gmail",
               "integrations/google_forms",
-              "integrations/linkedin_easy_apply"
+              "integrations/linkedin_easy_apply",
+              {
+					"group": "ATS",
+					"icon": "server",
+					"pages": [
+						"Lever",
+						"Greenhouse"
+					]
+				}
             ]
           }
         ]
