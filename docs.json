@@ -8,6 +8,11 @@
     "dark": "#9b5d98"
   },
   "favicon": "https://kello.ai/assets/icons/favicon/favicon.ico",
+  "integrations": {
+    "posthog": {
+        "apiKey": "phc_Hb71uVDgafiqQ550NqBA144YgmTOtK0AorWCJHIDce8"
+    }
+  },
   "navigation": {
     "tabs": [
       {
