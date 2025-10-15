@@ -7,7 +7,7 @@
     "light": "#f5eff5",
     "dark": "#9b5d98"
   },
-  "favicon": "https://kello.ai/assets/icons/favicon/favicon.ico",
+  "favicon": "/logo/favicon.png",
   "integrations": {
     "posthog": {
         "apiKey": "phc_Hb71uVDgafiqQ550NqBA144YgmTOtK0AorWCJHIDce8"
@@ -63,7 +63,7 @@
   },
   "logo": {
     "light": "/logo/kello_guide_logo_light.svg",
-    "dark": "/logo/kello_guide_logo_dark.svg"
+    "dark": "/logo/kello_guide_logo_dark.png"
   },
   "navbar": {
     "links": [
@@ -80,9 +80,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/kello-ai/"
     }
   }
 }
