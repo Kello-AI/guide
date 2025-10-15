@@ -62,7 +62,7 @@
     }
   },
   "logo": {
-    "light": "/logo/kello_guide_logo_light.svg",
+    "light": "/logo/kello_guide_logo_light.png",
     "dark": "/logo/kello_guide_logo_dark.png"
   },
   "navbar": {
