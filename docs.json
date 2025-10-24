@@ -82,5 +82,10 @@
     "socials": {
       "linkedin": "https://www.linkedin.com/company/kello-ai/"
     }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://guide.kello.ai"
+    }
   }
 }
