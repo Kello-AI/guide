@@ -30,7 +30,8 @@
               "platform/talent_pool",
               "platform/analytics",
               "platform/code_analysis",
-              "platform/search"
+              "platform/search",
+              "platform/data_security"
             ]
           },
           {
