@@ -1,0 +1,179 @@
+---
+title: "Security & Privacy at Kello"
+description: "A clear, no-nonsense look at how Kello handles your data when you connect Gmail, Google Forms, and Google Drive."
+sidebarTitle: "Security & Privacy"
+icon: "shield-halved"
+---
+
+Connecting your email inbox or forms to a new tool can feel… risky. Totally fair. This page shows **exactly** what Kello can access, what we store (and what we don’t), and the guardrails we’ve put in place.
+
+> Short version: Kello uses **read-only** Google integrations, pulls in only what’s needed to create candidates, mirrors your existing access controls, and stores sensitive files (like resumes) on an encrypted database in AWS **Mumbai, India**.
+
+## tl;dr (at a glance)
+
+- **Read-only Google integrations** (Gmail, Forms, Drive). No sending, drafting, labeling, or editing.
+- **Least-privilege scopes**: we only request what’s required to import applicants.
+- **Data residency**: AWS, **Mumbai (India)** region only (for now).
+- **Encryption**: TLS in transit, AES-256 at rest, keys managed by AWS KMS.
+- **Access model**: Google Workspace SSO only, and we **inherit the source system’s permissions** (Forms/ATS). For Gmail imports, you choose who can see them in Kello.
+- **We do store resumes** (to index/search), on an encrypted database. **We don’t store your general emails.**
+- **Google verification**: Kello is Google-verified and **CASA Tier 2** for restricted scopes.
+
+---
+
+## Where your data lives
+
+- **Cloud**: Amazon Web Services
+- **Region**: **Mumbai, India**
+- **Tenancy**: Multi-tenant application with strict logical isolation.
+
+:::warning Limitation We currently host exclusively in **India (Mumbai)** and don’t offer region selection yet. Talk to us if this is a concern for you. :::
+
+---
+
+## How you sign in & who sees what
+
+- **Sign-in**: Google Workspace login only (keeps access limited to company accounts).
+- **Permission mirroring**:
+  - **Google Forms → Kello**: only employees who can access that form can access the job/candidates created from it.
+  - **ATS → Kello**: we follow the ATS roles/permissions; users only see what they already had access to.
+  - **Gmail inbound → Kello**: you set visibility for imported emails/resumes inside Kello.
+
+---
+
+## Encryption & key management
+
+- **In transit**: All connections use TLS.
+- **At rest**: All data stored with **AES-256** encryption.
+- **Keys**: Managed via **AWS Key Management Service (KMS)**.
+- **Database**: Encrypted storage.
+
+---
+
+## The exact permissions we request (and why)
+
+| Integration  | OAuth scope                                                | Access level | Why we need it                                                                                                                                                              |
+| ------------ | ---------------------------------------------------------- | -----------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Gmail        | `https://www.googleapis.com/auth/gmail.readonly`           | Read-only    | Identify **job-application emails** and extract candidate info and attachments **without** modifying your mailbox. We **do not** store unrelated or personal emails.        |
+| Google Forms | `https://www.googleapis.com/auth/forms.responses.readonly` | Read-only    | Read the form **title, description, questions**, and **responses** so we can create a job in Kello and add candidates.                                                      |
+| Google Drive | `https://www.googleapis.com/auth/drive.readonly`           | Read-only    | If your form collects **file uploads** (resumes/CVs), they land in Drive. We read those files to **parse and index** resumes so they become searchable/filterable in Kello. |
+
+**What we never do with these scopes**
+
+- Create/modify labels, send emails, or draft replies in Gmail.
+- Edit forms or Drive files.
+- Scan your entire inbox. (More on that next.)
+
+---
+
+## “Do you read my whole inbox?” No.
+
+**How Gmail import works**
+
+We use Gmail’s search API with Boolean queries to pull in **only** emails that look like applications. Think along the lines of:
+
+```
+from:(@gmail.com OR @yahoo.com OR .ac.in OR .edu OR .edu.in) 
+((has:attachment filename:(pdf OR docx OR doc OR odt)) OR has:drive) 
+(
+  ({apply seek interest explore join consider} AND {role position job internship opportunity employment vacancy opening vacancy apprenticeship}) OR +CV OR +resume
+) 
+-((business AROUND 3 proposal) OR "joint venture" OR investor) 
+-subject:(partnership OR "Re:")
+```
+
+<Info>
+  Here’s the filter in plain English:
+
+  - **Who it’s from:** personal or academic addresses — `@gmail.com`, `@yahoo.com`, or domains ending in `.ac.in`, `.edu`, `.edu.in`.
+  - **What it includes:** either
+    - a **resume attachment** (`.pdf`, `.docx`, `.doc`, `.odt`), **or**
+    - a **Google Drive** attachment/link.
+  - **What it says:** shows **application intent**, e.g. words like _apply, seek, interest, explore, join, consider_ **near** terms like _role, job, position, internship, opportunity, employment, vacancy, opening, apprenticeship_ — **or** simply contains **“CV”** or **“resume.”**
+  - **What it avoids:** messages about **business proposals**, **joint ventures**, or **investors**, and subjects containing **“partnership”** or **“Re:”** (to skip pitches and reply chains).
+
+  **In short:** personal/edu senders + resume attached/Drive file + clear job-application wording — **excluding** business/pitch spam and replies.
+</Info>
+
+We limit results to messages that match these patterns so we don’t touch unrelated email. If an email **doesn’t** look like a job application, we **ignore** it.
+
+:::tip See exactly what Kello can access This page is your source of truth. If you need a deeper dive for legal/IT, reach out at [**security@kello.ai**](mailto:security@kello.ai) and we’ll share sample queries and data samples tailored to your setup. :::
+
+---
+
+## What we store (and what we don’t)
+
+### Gmail
+
+- ✅ **Store**: resumes attached to application emails (parsed + indexed), and the minimum candidate fields required to create a profile in Kello.
+- ❌ **Don’t store**: general/personal emails, non-recruiting messages, or full mailbox contents.
+- ✅ **Control**: you choose who in Kello can access Gmail-imported items.
+
+### Google Forms & Drive
+
+- ✅ **Store**: form metadata (title, description, questions), **responses**, and any **uploaded resumes/CVs**. Resumes are parsed and indexed on our encrypted database so search & filters are fast.
+- 🔁 **Sync cadence**: forms auto-sync roughly **every 10 minutes** after import.
+- ❌ **Don’t modify**: your Forms or Drive files.
+
+---
+
+## Data retention & deletion
+
+- **Retention**: we keep your data **as long as your workspace wants us to**.
+- **Delete or export**: email [**support@kello.ai**](mailto:support@kello.ai) to request account deletion and/or a data backup for compliance.
+- **Disconnecting an integration** stops new imports; existing candidates/resumes remain until you ask us to delete them.
+
+> We’re working toward more self-serve controls for export/delete. Until then, the support route is quickest.
+
+---
+
+## Compliance & platform policies
+
+- **Google verification**: Kello is **Google-verified** and holds **CASA Tier 2** certification, a requirement for restricted scope access (e.g., Gmail).
+- **Google API Services User Data Policy**: We follow the policy, including the **Limited Use** rules for Gmail data.
+
+What that means in practice:
+
+- No selling of user data.
+- No use of Gmail data for ads.
+- No human access to Gmail data unless you ask us to, it’s required for security/abuse prevention, or we must by law.
+
+---
+
+## Integration specifics (quick answers)
+
+### Gmail
+
+- **Labels**: we **don’t** create or modify them.
+- **Sending/drafting**: we **don’t** send email or create drafts.
+- **Scanning**: we **don’t** scan your full inbox—only messages matching application filters.
+- **Files**: we **do** store resume attachments (encrypted) so we can parse/index them.
+
+### Google Forms / Drive
+
+- **Sync**: roughly **every 10 minutes** after import.
+- **Files**: resumes/CVs uploaded via Forms are fetched from Drive, then **parsed, indexed, and stored** on our encrypted database.
+- **Access**: Kello respects the original Form’s access—only teammates who can access the form can access the derived job/candidates.
+
+---
+
+## Controls you have
+
+- Connect/disconnect integrations anytime.
+- Choose visibility for Gmail-imported items inside Kello.
+- Ask us to export and/or delete your data: [**support@kello.ai**](mailto:support@kello.ai).
+
+---
+
+## Known trade-offs
+
+- **Single region** (India/Mumbai) today; no EU/US region routing yet.
+- **Support-assisted deletion/export** for now (self-serve is on our roadmap).
+
+We prefer being upfront: if you need residency outside India right now, we may not be a fit—yet.
+
+---
+
+## Questions, audits, or a deeper dive?
+
+Ping us at [**support@kello.ai**](mailto:support@kello.ai). If your security team needs more (questionnaires, sample API responses, or data-flow diagrams), we’re happy to help.
