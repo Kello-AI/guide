@@ -1,0 +1,115 @@
+---
+title: "Claude connector"
+description: "Search your Kello workspace from inside Claude — candidates, jobs, and companies — using natural language."
+sidebarTitle: "Claude"
+icon: "sparkles"
+---
+
+The Kello connector lets you ask Claude questions about your Kello data and get answers back, without leaving the chat. Claude reads candidates, jobs, and companies from your workspace, applies your team's permissions, and writes nothing back.
+
+<Note>
+The connector is **read-only**. Claude can search and summarize, but cannot create, edit, or delete anything in Kello.
+</Note>
+
+## What you can ask Claude
+
+Claude can answer questions that span your entire candidate, job, and company graph — the kind of question a plain keyword search can't:
+
+- *"Who worked at OpenAI, Anthropic, or DeepMind and is now in India? Who's founding, and at which companies?"*
+- *"Senior engineers who moved back to India in 2026 after a foreign role — show me the returnees."*
+- *"Second-time IIT or IIM founders in India who raised Series A+ before and are now building something in stealth."*
+- *"First 50 employees of CRED — where are they now?"*
+
+Claude figures out which fields to search, runs the query against your Kello workspace, and returns a written answer with the matching results.
+
+## Set it up
+
+<Steps>
+  <Step title="Open Claude's connector settings">
+    In Claude (desktop, web, or mobile), go to **Settings → Connectors** and click **Add custom connector**.
+  </Step>
+
+  <Step title="Paste the Kello server URL">
+    Use:
+
+    ```
+    https://kello.ai/mcp
+    ```
+
+    Give it a name like "Kello" so it's easy to find later.
+  </Step>
+
+  <Step title="Sign in to Kello">
+    Claude will open a Kello sign-in page. Use the same account you use for [app.kello.ai](https://app.kello.ai) — Google, Microsoft, Slack, or email OTP all work.
+  </Step>
+
+  <Step title="Approve access">
+    Kello will show you what Claude is asking to do (read access to your workspace). Click **Approve**. You'll be returned to Claude, and the connector will show up as connected.
+  </Step>
+
+  <Step title="Try a question">
+    Start a new conversation and ask Claude something about your candidates or jobs. Claude will request permission the first time it uses the connector — approve it and you're set.
+  </Step>
+</Steps>
+
+## Privacy and safety
+
+<AccordionGroup>
+  <Accordion title="Claude can only read — never write" icon="lock">
+    The connector exposes no actions that create, update, or delete anything in Kello. Even if Claude tried to write, the server blocks every modifying operation at the API layer before it reaches your data.
+  </Accordion>
+
+  <Accordion title="Sensitive fields are stripped from responses" icon="shield">
+    Before any result reaches Claude, the connector removes:
+
+    - Primary email addresses and email lists
+    - Phone numbers
+    - Current and expected compensation
+    - Raw resume text
+
+    LinkedIn profile URLs are returned so Claude can link out to the candidate's profile, but personal contact details stay inside Kello.
+  </Accordion>
+
+  <Accordion title="Your team's permissions apply" icon="users">
+    Claude only sees what your Kello user account can see. If a job is restricted to a specific recruiter team, Claude inherits that same restriction when it searches on your behalf.
+  </Accordion>
+
+  <Accordion title="You authorize every session" icon="key">
+    Access tokens are short-lived and tied to your Kello account. You can disconnect the connector at any time from Claude's settings, and you can revoke active sessions from your Kello account settings.
+  </Accordion>
+</AccordionGroup>
+
+## Limits
+
+<Warning>
+The connector is rate-limited to **50 searches per hour per user** to keep your workspace responsive. If you hit the limit, Claude will tell you and you can resume after the hour rolls over.
+</Warning>
+
+Each search returns up to **100 results** at a time. Ask Claude to refine the query if you need to narrow down.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Claude says it can't reach Kello">
+    Check that you completed the sign-in flow. Open **Settings → Connectors** in Claude, find Kello, and click **Reconnect**. If that doesn't work, sign out of Kello and back in.
+  </Accordion>
+
+  <Accordion title="Claude says I'm rate-limited">
+    You've made more than 50 searches in the past hour. Wait for the window to reset, or ask Claude to combine multiple questions into one search.
+  </Accordion>
+
+  <Accordion title="Results are missing fields I expected">
+    A few sensitive fields (email, phone, compensation, raw resume) are intentionally hidden from Claude. To see them, open the candidate directly in Kello — click the LinkedIn link Claude returns, or search the candidate's name in [app.kello.ai](https://app.kello.ai).
+  </Accordion>
+
+  <Accordion title="Claude returned an error I don't understand">
+    Most errors fall into two buckets:
+
+    - **Validation errors** mean Claude built a query the connector doesn't allow. Rephrase your question and try again.
+    - **Execution errors** mean something went wrong on Kello's side. Wait a minute and retry; if it keeps happening, contact support below.
+  </Accordion>
+</AccordionGroup>
+
+## Support
+
+Reach out at **[support@kello.ai](mailto:support@kello.ai)** if you run into issues, or if you'd like to suggest other things Claude should be able to do with your Kello data.

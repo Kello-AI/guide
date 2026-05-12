@@ -38,6 +38,7 @@
             "group": "Integrations",
             "pages": [
               "integrations/overview",
+              "integrations/claude",
               "integrations/gmail",
               "integrations/google_forms",
               "integrations/linkedin_easy_apply",
