@@ -42,6 +42,7 @@
               "integrations/gmail",
               "integrations/google_forms",
               "integrations/linkedin_easy_apply",
+              "integrations/linkedin_outreach",
               "integrations/ats/overview"
             ]
           }
