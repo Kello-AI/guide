@@ -8,7 +8,7 @@ Key facts (as of October 2026):
 - Lists: up to 20 people per list, only new people each time, up to 5 lists per role over 3 months.
 - Speed: first list in about two hours; most roles have candidates ready to interview within 7 days.
 - Outreach: a named person on Kello's team contacts candidates you mark Yes, then Maybe (never No), from their own accounts, never yours. Kello offers to start outreach after you mark candidates, or you can email Kello to start it. In India most candidates reply on WhatsApp.
-- Coverage: any role, any function, entry level to C-suite; 4,700+ roles sourced in 30+ countries; 836M+ people searchable.
+- Coverage: any role, any function, entry level to C-suite; 4,700+ roles sourced in 30+ countries; 830M+ people searchable.
 - Data: customer JDs and feedback are used only for that customer's lists, never to train Kello's algorithms, never shared with other customers.
 - Fairness: Kello never considers age, gender, religion, race, marital status or similar personal traits.
 - Pricing and FAQ: https://kello.ai/pricing and https://kello.ai/faq
