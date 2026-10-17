@@ -8,6 +8,13 @@ icon: "building"
 
 Kello Alpha answers company and market questions as well as people questions. Ask Kello Alpha to map a team, list companies that match a description, chart where a market's talent comes from, or research one person before a call, and it answers with real counts from its data, charts where a breakdown helps, and sources for anything from the web.
 
+<CardGroup cols={2}>
+  <Card title="Map a team" icon="sitemap" href="#how-do-i-map-a-firms-team" horizontal />
+  <Card title="List companies" icon="list" href="#how-do-i-get-a-list-of-companies" horizontal />
+  <Card title="Market numbers" icon="chart-column" href="#can-alpha-answer-market-questions-with-numbers" horizontal />
+  <Card title="Research one person" icon="user" href="#whats-a-person-dossier" horizontal />
+</CardGroup>
+
 ## How do I map a firm's team?
 
 Ask for the team in plain words. This is common for executive search, BD and sales work. Real asks:
@@ -28,17 +35,19 @@ Say which, every time. "The HR team at X" could mean the people there today or e
 
 Alpha is built to find hires, so by default it trims a list toward the people who fit best. For a team map you want everyone, not a shortlist. Write it like this:
 
-```text
+```text Team map, everyone wrap
 Everyone currently at Multiples PE in investing roles, grouped by seniority. Don't drop anyone who currently holds an investing title.
 ```
 
+<Tip>
 The last sentence matters. Without it, someone whose past title doesn't match can be trimmed even though their current title does.
+</Tip>
 
 ### How big is a team?
 
 Team-size questions are fast and work well:
 
-```text
+```text Team size wrap
 Recruiting team size of Airtel in India
 ```
 
@@ -48,19 +57,19 @@ This returned 184 recruiters and 1,359 people across HR, with a chart.
 
 Describe the companies. The more you say about size, place and activity, the tighter the list.
 
-```text
+```text Company list: voice-AI startups wrap
 Voice-AI startups in Bangalore
 ```
 
-```text
+```text Company list: Series B fintechs wrap
 Series B fintechs in India with 100–500 people
 ```
 
-You get a list with industry, headcount, HQ, founded year and funding stage. Each company opens a full company page. Ask "also tell me why each one is on the list" and Alpha adds a reason per company.
+You get a list with industry, headcount, HQ, founded year and funding stage. Each company opens a full company page. Ask `also tell me why each one is on the list` and Alpha adds a reason per company.
 
 ### A real example: foreign companies hiring in Hyderabad
 
-```text
+```text Foreign companies hiring in Hyderabad wrap
 Companies that have an office in Hyderabad, but are headquartered outside India, their India team size is between 10-100 and are actively hiring in Hyderabad
 ```
 
@@ -68,11 +77,13 @@ This returned 22 companies in a few minutes. Alpha checked each company's India 
 
 ### Computed columns show in chat, not in the CSV
 
-A follow-up asked for a CSV with "India team size and number of roles they are hiring for". Alpha showed those columns as a table in chat. Columns that Alpha works out during the conversation, like these, don't go into the CSV file itself. Copy the table from chat if you need them. See [working with results](/alpha/working-with-results).
+<Note>
+A follow-up asked for a <Tooltip tip="A spreadsheet file that opens in Excel or Google Sheets.">CSV</Tooltip> with "India team size and number of roles they are hiring for". Alpha showed those columns as a table in chat. Columns that Alpha works out during the conversation, like these, don't go into the CSV file itself. Copy the table from chat if you need them. See [can I choose the columns?](/alpha/working-with-results#can-i-choose-the-columns)
+</Note>
 
 ### Questions about the future
 
-Asks that need judgment, such as "startups planning to go IPO in the next 3-5 years", use the web plus Kello's data. They come back as a company list. Add "also mention why their names are there" to get a reason for each.
+Asks that need judgment, such as "startups planning to go IPO in the next 3-5 years", use the web plus Kello's data. They come back as a company list. Add `also mention why their names are there` to get a reason for each.
 
 ## What's on a company page?
 
@@ -95,7 +106,7 @@ For colleges, the page shows notable alumni, alumni outcomes and the functions a
 
 Ask where people come from or go next:
 
-```text
+```text Talent flow wrap
 Where do Swiggy engineers go next?
 ```
 
@@ -105,7 +116,7 @@ Talent flow is useful for finding companies to source from, and for understandin
 
 Ask for it. Alpha shows month-by-month headcount for up to 5 years for any company. Use it to spot growth, distress or a company winding down.
 
-```text
+```text Headcount trend check wrap
 Is this candidate's current employer shrinking? [company name]
 ```
 
@@ -122,13 +133,15 @@ Yes. Alpha counts real profiles and job posts. For one number, it answers in tex
 | "What were the top job titles and most rare but new job titles" | A chart of top titles, plus emerging ones such as AI agent engineer and forward deployed engineer |
 | "How many PhDs does Baseten have?" | 8. The follow-up "show me all 8" gave the list. |
 
-The last pattern is useful: ask for the count first, then "show me all" to turn the number into a list you can review.
+<Tip>
+The last pattern is useful: ask for the count first, then `show me all` to turn the number into a list you can review.
+</Tip>
 
 ## Can Alpha search job postings?
 
 Yes. Alpha searches millions of live job postings. Use it for "who is hiring for X" and competitive intel.
 
-```text
+```text Job postings search wrap
 Open senior backend roles at fintechs in Bangalore posted this month
 ```
 
@@ -138,7 +151,7 @@ Postings are shown in the answer. They aren't saved as a list.
 
 Yes. For things the database doesn't hold, such as funding news, leadership changes, event pages or what a new term means, Alpha searches the web and reads up to 20 pages at once. It cites its sources.
 
-```text
+```text Company brief from the web wrap
 Give me a 5-line brief on [company website]
 ```
 
@@ -146,11 +159,11 @@ Give me a 5-line brief on [company website]
 
 A short, sourced summary of one person: current role, past roles, education, public work and recruiter-relevant signals, with one fact and one source link per line. It takes 1–2 minutes. Alpha first confirms it has the right person and says if there's a namesake.
 
-```text
+```text Dossier from a LinkedIn URL wrap
 Tell me everything about https://linkedin.com/in/[profile]
 ```
 
-```text
+```text Dossier from name and company wrap
 Tell me everything about [name] of [company], including web search
 ```
 
@@ -160,27 +173,27 @@ A LinkedIn URL is the surest way in. Profiles lag real life, so a recent job mov
 
 Ask in the same chat, right after the dossier. Each of these came back in about 20 seconds:
 
-```text
+```text Follow-up: pitch for a call wrap
 What is the pitch I can make to her? I have a call scheduled with her.
 ```
 
-```text
+```text Follow-up: address concerns wrap
 She's worried about adoption of a new AI tool and the fixed costs. How should we address these concerns?
 ```
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Get better results" href="/alpha/better-results" icon="bullseye">
+  <Card title="Better results" href="/alpha/better-results" icon="bullseye" horizontal>
     Phrase asks so the first answer lands.
   </Card>
-  <Card title="Alpha playbooks" href="/alpha/playbooks" icon="rocket">
+  <Card title="Playbooks" href="/alpha/playbooks" icon="rocket" horizontal>
     Who worked where, and when.
   </Card>
-  <Card title="Working with results" href="/alpha/working-with-results" icon="file-csv">
+  <Card title="Working with results" href="/alpha/working-with-results" icon="table-list" horizontal>
     Export lists as CSV.
   </Card>
-  <Card title="Prompt library" href="/alpha/prompt-library" icon="book">
+  <Card title="Prompt library" href="/alpha/prompt-library" icon="lightbulb" horizontal>
     Team map and market prompts.
   </Card>
 </CardGroup>

@@ -8,19 +8,19 @@ icon: "pen"
 
 A great Kello brief is your job description plus the few things it doesn't say: location, work setup, budget, which requirements are must-haves and which are nice-to-haves, companies to hire from or avoid, and a few LinkedIn profiles of people you'd hire in a heartbeat. Those few lines decide most of what lands in your first list.
 
-You don't need a polished JD. Pasted text, a PDF, a Word doc or a link to the job post all work. No JD? Send the role name and a few lines on who you need.
+You don't need a polished <Tooltip tip="Job description: the document that describes the role.">JD</Tooltip>. Pasted text, a PDF, a Word doc or a link to the job post all work. No JD? Send the role name and a few lines on who you need.
 
 ## What should a brief include?
 
-- **Role and company in the subject line.** See [the subject line](#what-should-the-subject-line-say).
-- **The JD**, with responsibilities, not only requirements.
-- **Location and work setup.** City, office days, or remote with a time zone.
-- **Budget.** A range, or "no fixed budget, use market rates".
-- **Experience band.** For example, 8–10 years.
-- **Must-haves vs nice-to-haves.** What truly matters, and what can bend.
-- **Companies to hire from or avoid.**
-- **People you'd hire in a heartbeat.** A few LinkedIn profiles, with a line on why. See [how to share example profiles](#how-do-i-share-example-profiles).
-- **Your website**, if your company name is shared with others.
+- [ ] **Role and company in the subject line.** See [the subject line](#what-should-the-subject-line-say).
+- [ ] **The JD**, with responsibilities, not only requirements. <Badge color="blue">Required</Badge>
+- [ ] **Location and work setup.** City, office days, or remote with a time zone. <Badge color="orange">Kello asks if missing</Badge>
+- [ ] **Budget.** A range, or `no fixed budget, use market rates`. <Badge color="orange">Kello asks if missing</Badge>
+- [ ] **Experience band.** For example, 8–10 years.
+- [ ] **Must-haves vs nice-to-haves.** What truly matters, and what can bend.
+- [ ] **Companies to hire from or avoid.**
+- [ ] **People you'd hire in a heartbeat.** A few LinkedIn profiles, with a line on why. See [how to share example profiles](#how-do-i-share-example-profiles). <Badge color="gray">Optional</Badge>
+- [ ] **Your website**, if your company name is shared with others.
 
 For a fill-in-the-blanks version, use the [general template](/kello/brief-templates#general-template-for-any-role).
 
@@ -28,17 +28,24 @@ For a fill-in-the-blanks version, use the [general template](/kello/brief-templa
 
 Most delays happen before the search starts. The three things Kello asks about most are budget, location and work setup. Briefs that include all three usually start within minutes, with no questions. Briefs without them lose at least one round trip.
 
-<Note>
+<Callout icon="quote-left" color="#9b5d98">
 **Real example: same person, two roles.** A content creator sent two roles. The first was a PDF and nothing else. Kello replied: *"Before I can start sourcing, could you let me know the budget or salary range…"* The second email led with the details: budget up to ₹50,000 a month, full-time, on-site in a small city in North India, 2–5 years of experience. Kello started on it within 3 minutes.
-</Note>
+</Callout>
 
 ## Do I need to give a location and budget?
 
 Yes. If either is missing, Kello asks one short question before searching. Putting both in the first email saves the wait.
 
-**Budget.** You don't need a number. A range is a complete answer, and so is "no fixed budget, use market rates". "Flexible" is not: Kello treats it as unanswered and asks again.
+```text Reply to Kello wrap
+Budget: No fixed budget, use market rates
+Location: Bangalore, 3 days a week in office
+```
 
-Check the budget with the hiring manager before you send it. Kello uses it to calibrate seniority, so a guess that turns out wrong costs a full round.
+**Budget.** You don't need a number. A range is a complete answer, and so is `no fixed budget, use market rates`.
+
+<Warning>"Flexible" isn't a budget. Kello treats it as unanswered and asks again. Give a range, or say "no fixed budget, use market rates".</Warning>
+
+Check the budget with the hiring manager before you send it. Kello uses it to calibrate seniority, so a guess that turns out wrong costs a full <Tooltip tip="Each list is a round: one list, plus your marks and feedback on it.">round</Tooltip>.
 
 **Location and work setup.** Give the city and whether the role is on-site, hybrid (how many days) or remote. For remote roles, add the time zone. Say whether people willing to relocate are welcome. Without it, people can drop out late over relocation.
 
@@ -46,18 +53,18 @@ A role open in two cities is one role: list both locations and the list stays up
 
 ## What should the subject line say?
 
-The role title and your company, for example `Backend Architect – <Your company>`. Kello knows which role and which company the thread is about from the first line, and your team can find the thread when they join it.
+The role title and your company, for example `Backend Architect – [Your company]`. Kello knows which role and which company the thread is about from the first line, and your team can find the thread when they join it.
 
 Keep one role per thread so the subject stays true.
 
 ## Which JD formats work best?
 
-| How well it works | Format | Tip |
+| Format | How well it works | Tip |
 |---|---|---|
-| Works best | JD text pasted into the email body | The most reliable way to start fast. |
-| Usually works | PDF or Word attachment | Attach it as a backup even when you paste the text. |
-| Usually works | LinkedIn, ATS or careers-page links | Paste the key details too, in case the link opens a general careers page. |
-| Often fails | Notion links and some job-board links | Paste the text, or attach a PDF or Word file. |
+| JD text pasted into the email body | <Badge color="green">Works best</Badge> | The most reliable way to start fast. |
+| PDF or Word attachment | <Badge color="yellow">Usually works</Badge> | Attach it as a backup even when you paste the text. |
+| LinkedIn, <Tooltip tip="Applicant tracking system: the software your team uses to track candidates.">ATS</Tooltip> or careers-page links | <Badge color="yellow">Usually works</Badge> | Paste the key details too, in case the link opens a general careers page. |
+| Notion links and some job-board links | <Badge color="red">Often fails</Badge> | Paste the text, or attach a PDF or Word file. |
 
 **Forwarding a hiring post from social media?** Kello can start from it if the post names the role, company, location and pay. Most don't, so add a line: `Budget: market rates. Location: remote, US time zones.`
 
@@ -73,13 +80,19 @@ Most JDs list ten requirements with equal weight. Kello needs to know which two 
 
 Firm requirements stack, and each one narrows the pool. When not enough people meet the bar, Kello says how many cleared out of how many it evaluated, and which requirement is narrowing the search. If you've already said what can bend, Kello can make a better call.
 
-If a list comes back short, ask what constrained it, then reply with the one constraint that can bend: "Open to people willing to relocate, and up to 35 LPA." See [your list](/kello/your-list).
+If a list comes back short, ask what constrained it, then reply with the one constraint that can bend:
+
+```text Example reply: what can bend wrap
+Open to people willing to relocate, and up to 35 LPA.
+```
+
+LPA: lakhs per annum, yearly pay in Indian rupees (1 lakh = 100,000). See [can I ask what narrowed the list?](/kello/your-list#can-i-ask-what-narrowed-the-list)
 
 Kello also tells you plainly when a brief clashes with the market, for example when the skill you want usually sits in a different kind of company from the ones you named.
 
-<Note>
-**Real example: the same role, briefed two ways.** A finance role first went in as a sparse brief: a few bullets, no target companies. Its lists came back with 4, then 2, then 3 candidates. The rewritten brief named target banks, NBFCs and fintechs, gave a pay sweet spot ("currently drawing 50 to 65 lakhs") and spelled out exclusions ("no investment bankers, no consulting backgrounds"). It returned 15 candidates on the first pass.
-</Note>
+<Callout icon="quote-left" color="#9b5d98">
+**Real example: the same role, briefed two ways.** A finance role first went in as a sparse brief: a few bullets, no target companies. Its lists came back with 4, then 2, then 3 candidates. The rewritten brief named target banks, <Tooltip tip="Non-banking financial company: an Indian lender that isn't a bank.">NBFCs</Tooltip> and fintechs, gave a pay sweet spot ("currently drawing 50 to 65 lakhs") and spelled out exclusions ("no investment bankers, no consulting backgrounds"). It returned 15 candidates on the first pass.
+</Callout>
 
 ## Should I name companies to target or avoid?
 
@@ -89,17 +102,19 @@ Kello already starts with your company and the kind of people it has hired. Your
 
 With each list, Kello reports on the companies you named: either the list includes people from them, or nobody from them cleared this round. When nobody cleared, Kello offers a dedicated pass on just those companies. Take it.
 
-<Note>
+<Callout icon="quote-left" color="#9b5d98">
 **Real example: the dedicated pass.** For a defence-sector sales role, nobody from the named companies made the first list. The recruiter asked for the dedicated pass. It returned 7 candidates, mostly from one of the named companies.
-</Note>
+</Callout>
 
 ## How do I rule out the wrong segments?
 
 Name them. One line of exclusions removes whole groups that would otherwise fill your list:
 
-- "No services companies, no semiconductors, no very traditional companies."
-- "No marketplaces. Look at FMCG, e-commerce and D2C brands instead."
-- "No investment bankers, no consulting backgrounds."
+```text Example exclusions wrap
+No services companies, no semiconductors, no very traditional companies.
+No marketplaces. Look at FMCG, e-commerce and D2C brands instead.
+No investment bankers, no consulting backgrounds.
+```
 
 Kello confirms exclusions back to you and carries them through every list.
 
@@ -107,15 +122,25 @@ Kello confirms exclusions back to you and carries them through every list.
 
 Draw the line when a title could mean several things. Without it, "senior ML" or "AI engineer" can bring you the wrong kind of good candidate.
 
-- "Strong core ML depth, not someone who has mainly built apps on LLM APIs."
-- "Not looking for high ownership; we'd like to avoid product engineers."
-- "Must be on a bug bounty leaderboard or high in CTF rankings."
+```text Example depth lines wrap
+Strong core ML depth, not someone who has mainly built apps on LLM APIs.
+Not looking for high ownership; we'd like to avoid product engineers.
+Must be on a bug bounty leaderboard or high in CTF rankings.
+```
 
 ## Should I share the context behind the JD?
 
-Yes. Why past hires or applicants didn't work out often says more than the JD. One recruiter forwarded a post about why direct applicants hadn't worked. Kello replied that it was *"prioritizing technical depth over 'flashy' profiles"*, and looked for active code contributions and technical writing.
+Yes. Why past hires or applicants didn't work out often says more than the JD.
 
-A line is enough: "Our last two hires came from large companies and struggled without structure."
+<Callout icon="quote-left" color="#9b5d98">
+**Real example:** One recruiter forwarded a post about why direct applicants hadn't worked. Kello replied that it was *"prioritizing technical depth over 'flashy' profiles"*, and looked for active code contributions and technical writing.
+</Callout>
+
+A line is enough:
+
+```text Example context line wrap
+Our last two hires came from large companies and struggled without structure.
+```
 
 ## What makes an addition strong or weak?
 
@@ -129,16 +154,16 @@ Specific lines give Kello something to read profiles against. Vague ones don't.
 | "Strong sales background" | "Has sold B2B SaaS to mid-market finance teams" |
 | "Senior ML engineer" | "Core ML: has done post-training, not only apps on LLM APIs" |
 | "Bangalore preferred" | "Bangalore, 3 days a week in office. Firm." |
-| "Top companies" | "Would love people from fintech startups. Avoid our customers: `<names>`" |
+| "Top companies" | "Would love people from fintech startups. Avoid our customers: `[names]`" |
 | "Young, energetic team" | "3–6 years of experience" |
 
-Kello never considers age, gender, religion, race, marital status or similar personal traits. If a brief asks for one, Kello uses a professional signal instead, such as an experience range in place of an age. See [data, privacy and fairness](/kello/trust).
+Kello never considers age, gender, religion, race, marital status or similar personal traits. If a brief asks for one, Kello uses a professional signal instead, such as an experience range in place of an age. See [what if my brief asks for a personal trait?](/kello/trust#what-if-my-brief-asks-for-a-personal-trait)
 
 ## How do I share example profiles?
 
 Sharing a few example profiles is the fastest way to show Kello your team's taste before the first list. Paste the LinkedIn links into your brief, each with a line on why that person is the template.
 
-```text
+```text Example profiles in a brief wrap
 People I'd hire in a heartbeat:
 https://www.linkedin.com/in/...  (strong frontend engineer who also joins sales calls)
 https://www.linkedin.com/in/...  (built our payments stack at a 20-person startup)
@@ -146,17 +171,17 @@ https://www.linkedin.com/in/...  (built our payments stack at a 20-person startu
 
 The why matters. A bare link tells Kello who; the line tells it what to carry through the search. When one founder explained that their example was "not only a good frontend engineer" but someone who could "jump on sales calls", Kello looked for that trait across the whole list.
 
-A CV works as an example too. Attach it and say "more people like this".
+A CV works as an example too. Attach it and say `more people like this`.
 
 You can also add examples mid-search. Reply with a profile, or name a person from your list, and Kello builds the next list around them.
 
-## What does Kello learn from them?
+### What does Kello learn from them?
 
 Kello reads each example the same way it reads every candidate: for meaning, not keywords. It looks at what each of their employers actually does, the size and stage of those companies when they joined and when they left, how quickly they were promoted, and what they worked on.
 
 Then it looks for what the examples share. Maybe they all joined companies early and stayed through a growth phase. Maybe they all moved from engineering into customer-facing work. Those patterns are often things a JD never says. Kello then finds more people like them.
 
-## Who makes a good example?
+### Who makes a good example?
 
 - People on your team who are great at this job.
 - Past colleagues you'd hire again.
@@ -164,21 +189,21 @@ Then it looks for what the examples share. Maybe they all joined companies early
 
 If two quite different people would both succeed in the role, share both. Kello looks for several different kinds of people who could succeed, so the list isn't one profile repeated 20 times.
 
-## Will the example people appear in my list?
+### Will the example people appear in my list?
 
 No. They're examples, not candidates. Kello uses them to calibrate the search, and they won't be in your list.
 
-If you're sharing people already in your pipeline, say so. Kello treats them as a quality bar and won't contact them.
+If you're sharing people already in your <Tooltip tip="People you're already talking to or interviewing for this role.">pipeline</Tooltip>, say so. Kello treats them as a quality bar and won't contact them.
 
-## What if I don't have any examples?
+### What if I don't have any examples?
 
 That's fine. Example profiles are optional. Kello always starts with your company and the kind of people it has hired, which gives the first list a strong starting point.
 
-## Do my Yes marks work the same way?
+### Do my Yes marks work the same way?
 
 Yes. Once your list arrives, every person you mark **Yes** or **No** teaches Kello the same way your examples did. Kello studies the Yes and No profiles in depth to learn your team's taste.
 
-A short note on why ("love this one", "too senior") makes the reason explicit, so Kello doesn't have to guess. See [feedback](/kello/feedback).
+A short note on why (`love this one`, `too senior`) makes the reason explicit, so Kello doesn't have to guess. See [do I need to add a note?](/kello/feedback#do-i-need-to-add-a-note)
 
 ## Can I send several roles in one email?
 
@@ -186,25 +211,25 @@ No. Send **one role per email**. Every role gets its own search and its own list
 
 ## What if I get something wrong?
 
-Reply with the correction, like "it's a Director role" or "Pune, not Bangalore". Kello restarts on the corrected brief, even mid-search.
+Reply with the correction, like `it's a Director role` or `Pune, not Bangalore`. Kello restarts on the corrected brief, even mid-search.
 
 Kello also confirms how it read the role within minutes of your email. That's the easiest moment to catch a misread.
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Brief templates" icon="copy" href="/kello/brief-templates">
+  <Card title="Brief templates" icon="copy" href="/kello/brief-templates" horizontal>
     A general template, plus copy-paste emails for seven roles.
   </Card>
-  <Card title="How Kello evaluates candidates" icon="book-open-reader" href="/kello/how-kello-evaluates">
+  <Card title="How Kello evaluates" icon="book-open-reader" href="/kello/how-kello-evaluates" horizontal>
     How Kello reads a profile.
   </Card>
-  <Card title="Your list" icon="list" href="/kello/your-list">
+  <Card title="Your list" icon="list" href="/kello/your-list" horizontal>
     What arrives, and what happens when few people fit.
   </Card>
-  <Card title="Feedback and your next list" icon="comments" href="/kello/feedback">
+  <Card title="Feedback and next lists" icon="comments" href="/kello/feedback" horizontal>
     How your marks and notes shape the next list.
   </Card>
 </CardGroup>
 
-Send your next role to **source@kello.ai**.
+Send your next role to [source@kello.ai](mailto:source@kello.ai).
