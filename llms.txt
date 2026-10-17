@@ -9,7 +9,7 @@ Key facts (as of October 2026):
 - Speed: first list in about two hours; most roles have candidates ready to interview within 7 days.
 - Outreach: a named person on Kello's team contacts candidates you mark Yes, then Maybe (never No), from their own accounts, never yours. Kello offers to start outreach after you mark candidates, or you can email Kello to start it. In India most candidates reply on WhatsApp.
 - Coverage: any role, any function, entry level to C-suite; 4,700+ roles sourced in 30+ countries; 830M+ people searchable.
-- ATS: Kello connects to Ashby, Breezy HR, Greenhouse, Lever, Recruitee and Workable. It pushes candidates in and pulls interview feedback back.
+- ATS: Kello connects to Ashby, Breezy HR, Greenhouse, Kula, Lever, Recruitee and Workable. It pushes candidates in and pulls interview feedback back.
 - Data: customer JDs and feedback are used only for that customer's lists, never to train Kello's algorithms, never shared with other customers.
 - Fairness: Kello never considers age, gender, religion, race, marital status or similar personal traits.
 - Pricing and FAQ: https://kello.ai/pricing and https://kello.ai/faq
