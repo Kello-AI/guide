@@ -333,14 +333,6 @@
         "header": "Kello",
         "items": [
           {
-            "label": "Send a role, free",
-            "href": "https://kello.ai/start"
-          },
-          {
-            "label": "Pricing",
-            "href": "https://kello.ai/pricing"
-          },
-          {
             "label": "FAQ",
             "href": "https://kello.ai/faq"
           },
@@ -356,10 +348,6 @@
           {
             "label": "source@kello.ai",
             "href": "mailto:source@kello.ai"
-          },
-          {
-            "label": "support@kello.ai",
-            "href": "mailto:support@kello.ai"
           },
           {
             "label": "Careers",
