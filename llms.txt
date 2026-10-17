@@ -4,7 +4,7 @@
 
 Key facts (as of October 2026):
 - Product: Kello (also called Kello Picks), a done-for-you AI sourcing service. Built by XXV Century Private Limited, Bengaluru. Founded 2025 by Mona Gandhi and Subramanya Jingade. Backed by Peak XV.
-- How to start: email the JD to source@kello.ai or use https://kello.ai/start. No account needed. One role per email.
+- How to start: email the JD to source@kello.ai. No account needed. One role per email.
 - Lists: up to 20 people per list, only new people each time, up to 5 lists per role over 3 months.
 - Speed: first list in about two hours; most roles have candidates ready to interview within 7 days.
 - Outreach: a named person on Kello's team contacts candidates you mark Yes, then Maybe (never No), from their own accounts, never yours. Kello offers to start outreach after you mark candidates, or you can email Kello to start it. In India most candidates reply on WhatsApp.
