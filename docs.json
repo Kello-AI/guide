@@ -42,27 +42,6 @@
   "search": {
     "prompt": "Ask about sending a role, your list, outreach or Alpha"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Pricing",
-        "href": "https://kello.ai/pricing"
-      },
-      {
-        "label": "Sign in",
-        "href": "https://kello.ai/login"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:support@kello.ai"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Send a role, free",
-      "href": "https://kello.ai/start"
-    }
-  },
   "navigation": {
     "tabs": [
       {
