@@ -1,20 +1,26 @@
 ---
 title: "Kello Alpha results: lists, profiles, sharing and export"
 sidebarTitle: "Working with results"
-description: "Kello Alpha lists hold up to 1,000 people. See why each matched, remove misses with Not a fit, save and share, and export as CSV by asking in chat."
+description: "Kello Alpha lists hold up to 1,000 people, 100 per page. See why each matched, remove misses, save to collections and export CSV by asking in chat."
 keywords: ["Kello Alpha results page", "why this candidate", "Not a fit", "warm intro paths", "save candidate to collection", "Kello collections search", "Kello Alpha export", "export candidates to CSV", "Kello Alpha CSV"]
 icon: "table-list"
 ---
 
-Every Kello Alpha people search ends in a saved list of up to 1,000 people. Open any profile to see which of your criteria the person matched and the proof for each, remove people who miss with **Not a fit** so the next search gets sharper, and save, share or refine the list in chat. To export, type "export this as CSV" and Kello Alpha replies with a download link.
+Every Kello Alpha people search ends in a saved list of up to 1,000 people, shown 100 per page. The list in chat is only a preview, so open the full list to see everyone. Open any profile to see which of your criteria the person matched and the proof for each, remove people who miss with **Not a fit** so the next search gets sharper, and save, share or refine the list in chat. To export, type "export this as CSV" and Kello Alpha replies with a download link.
 
 ## How do I see the whole list?
 
-Click **View N candidates** on the list card. The results page shows 24 people per page. Use the page controls at the bottom to move through the rest of the list.
+Click **View N candidates** on the list card. The results page shows 100 people per page. Use the page controls at the bottom to move through the rest of the list.
 
 At the top, the list carries a one-sentence description of exactly who it contains, plus Alpha's assumptions.
 
 Lists are frozen when first opened. You and your colleagues see the same people in the same order every time you come back.
+
+## Is the list in chat the whole list?
+
+No. The people shown in the chat answer are a preview of the top of the list. The count in the answer is the real size of the list. Open the full list to page through everyone.
+
+One recruiter wrote "I don't see 90 investors in the list". All 90 were there; they were on the full results page, not in the chat preview.
 
 ## Why is this person on my list?
 
@@ -43,7 +49,7 @@ Warm-intro paths. When someone at your company worked or studied with this perso
     Answer "What's off about this match?" in a few words: "agency recruiter", "too junior", "services company".
   </Step>
   <Step title="Remove from this list">
-    The person disappears from this list, its exports and every refined version of the search.
+    The person disappears from this list. They stay removed through later refinements and exports.
   </Step>
 </Steps>
 
@@ -59,7 +65,7 @@ The results page has no sort, filter or bulk select. Ask Alpha instead: "only pe
 
 ## How do I save and share people?
 
-- **Save to a Kello job or collection** from the profile, to keep a shared list.
+- **Save to a Kello job or collection** from the profile or the results list, to keep a shared list.
 - **Share a candidate** with a public link from their profile.
 - **Download a profile as PDF.**
 - **Export the whole list as CSV** by asking in chat.
@@ -72,13 +78,13 @@ Ask in the same chat as the list:
 Export this as CSV
 ```
 
-Alpha returns a download link. Open it to save the file, then open it in any spreadsheet app.
+Alpha returns a download link in about 15 seconds. Open it to save the file, then open it in any spreadsheet app.
 
-There's no export button on the results page today. Asking in chat is the way to do it, and it's quick.
+There's no export button on the results page today. Asking in chat is the way to do it.
 
 ## How long does the link last?
 
-30 minutes. If it expires, ask again and Alpha makes a new one.
+30 minutes, so download the file right away. If the link expires, ask again and Alpha makes a new one.
 
 ## Can I choose the columns?
 
@@ -88,37 +94,43 @@ Yes. Say which columns you want, or what to swap.
 Export as CSV with name, current title, current company, location and LinkedIn URL
 ```
 
-```text
-Swap global team size for India team size and add the number of open roles
-```
+The CSV holds fields from Kello's data. Columns Alpha works out during the chat, such as "India team size" or "number of roles they are hiring for" on a company list, appear as a table in chat, not in the CSV file. Copy that table if you need it. See [company lists](/alpha/companies-and-market).
 
 ## How many rows can I export?
 
-Up to 5,000 rows per file. For bigger lists, Alpha splits the export into slices, one file each.
+Up to 5,000 rows per file. For bigger lists, ask for the next slice ("export rows 5,001 to 10,000") and Alpha makes another file.
 
 ## Can I export company lists?
 
-Yes. Company lists export the same way. Ask for the columns you need, such as headcount, HQ, founded year or funding stage.
+Yes. Company lists export the same way. Ask for the columns you need, such as headcount, HQ, founded year or funding stage. Computed columns stay in chat, as above.
 
 ## Does the file include emails or phone numbers?
 
-No. Kello Alpha never includes contact details, in lists or in exports. Reach people through your own tools, or send the role to [Kello](/kello/quickstart), where contact details are available for candidates you want to reach.
+No. Kello's data has no emails or phone numbers, so lists and exports never include them. If you've connected a tool such as Apollo or FullEnrich, ask Alpha to "use Apollo to find their work emails" for the people you choose. See [connected apps](/alpha/usage-limits-and-trust). Or send the role to [Kello](/kello/quickstart), where contact details are available for candidates you want to reach.
 
 ## What about people I removed?
 
-People you removed with **Not a fit** are left out of the export.
+People you removed with **Not a fit** are left out of the export, and out of every refined version of the list.
 
 ## Can Alpha search inside my collections?
 
 Yes. Name the collection in your ask:
 
 ```text
-Senior engineers in my fintech collection
+Search my fintech collection for senior engineers
+```
+
+```text
+Share my collections as a table
 ```
 
 Alpha finds the collection by name and searches only inside it. The list stays live as you add or remove people.
 
-Only members who exist in Kello's people data can be searched, so people added from résumé uploads aren't included. Alpha tells you the coverage, for example "47 of 213 members are searchable".
+Only members with a Kello profile can be searched, so people added from résumé uploads aren't included. Alpha tells you the count, for example "47 of 213 members are searchable" or "0 of 24 searchable".
+
+## Can I add people to a collection from chat?
+
+No. Alpha can't add people to a collection from chat. Select them in the results list, or open a profile, and add them to the collection there. Then ask Alpha to search or share that collection.
 
 ## Related
 

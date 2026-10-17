@@ -32,6 +32,7 @@ Key facts (as of October 2026):
 ## Kello Alpha (self-serve search)
 - [Overview and first search](https://guide.kello.ai/alpha/overview): plain-language search over 830M+ professionals and 57M companies.
 - [Finding people](https://guide.kello.ai/alpha/finding-people): asking well, hiring from a JD, example profiles.
+- [Get better results](https://guide.kello.ai/alpha/better-results): ten habits from real usage, timings, and how to check a result.
 - [Prompt library](https://guide.kello.ai/alpha/prompt-library)
 - [Playbooks](https://guide.kello.ai/alpha/playbooks): reference checks, event guest lists, founders and talent moves.
 - [Companies and the market](https://guide.kello.ai/alpha/companies-and-market)

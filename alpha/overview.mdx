@@ -17,7 +17,7 @@ Kello Alpha turns a sentence into a search. There are no boolean strings, filter
 - **Learns from examples.** Paste up to 10 LinkedIn profiles of people you'd hire. Alpha works out what they share.
 - **Runs built-in playbooks** for reference checks, event guest lists, founders to watch, ex-founders and acqui-hires, career moves, and who worked with whom.
 - **Answers market questions** about companies, talent flow, headcount trends and live job postings, with real numbers and charts.
-- **Tells you what it did.** A second AI reviews the top results of every people search. If Alpha loosened a must-have or couldn't filter on something, it says so.
+- **Tells you what it did.** A second review checks the top results of every people search against the person you described. If Alpha loosened a must-have or couldn't filter on something, it says so.
 
 ## Who is Kello Alpha for?
 
@@ -42,7 +42,7 @@ Kello has two ways to find people. Kello Alpha is the one you drive. Kello is th
 | How you start | Sign in and type a question | Email a role to source@kello.ai or use kello.ai/start |
 | What you get | Lists of up to 1,000 people, refined as you chat | Up to 20 people per list, each with reasons they fit your role |
 | Outreach | None. You reach people through your own tools | Our team reaches out to the people you approve |
-| Contact details | Not provided | Available for any candidate you want to reach |
+| Contact details | Not in Kello's data. Connect your own tool, such as Apollo, for work emails | Available for any candidate you want to reach |
 | Best for | Mapping, research, exploring a market, many quick questions | One open role you want filled with interested candidates |
 
 Use Alpha when you want to explore. Send a role to Kello when you want people ready to talk. See the [Kello quickstart](/kello/quickstart).
@@ -82,9 +82,13 @@ You see progress live:
 - **The narrowing funnel**, showing how the pool shrinks as Alpha applies your criteria.
 - **A "Thought for Ns" panel** you can expand to see Alpha's reasoning.
 
-Alpha searches, then has a second AI review the top results against the person you described. If people who don't fit leaked in, or good people were missed, Alpha fixes the search (at most twice) before showing you anything.
+Alpha searches, then a second review checks the top results against the person you described. If people who don't fit leaked in, or good people were missed, Alpha fixes the search (at most twice) before showing you anything.
 
 You can close the tab. Alpha keeps working, and the answer is there when you come back. You can also press stop at any time; the partial answer is kept.
+
+## How long does Alpha take?
+
+A first search takes about 3 minutes, and each follow-up about 1. Product questions and call prep come back in under 30 seconds. A job description or a fuzzy brief takes 3 to 10 minutes. Very open briefs take longest, so start with a clear first ask and add follow-ups. See the [full timings](/alpha/better-results#how-long-does-each-kind-of-ask-take).
 
 ## Will Alpha ask me questions?
 
@@ -104,7 +108,7 @@ Every people search ends with a list card:
 
 Alpha also writes a short answer above the card. If it loosened a must-have or couldn't filter on something, it says so there in plain words.
 
-A list holds up to 1,000 people, shown 24 per page. Use the page controls at the bottom of the results page to see the rest.
+A list holds up to 1,000 people, shown 100 per page. The list in chat is a preview; open the full list to see everyone. Use the page controls at the bottom of the results page to see the rest.
 
 <Tip>
 Lists are frozen when first opened, so the same list shows the same order every time you or a colleague come back to it.
@@ -116,6 +120,11 @@ Lists are frozen when first opened, so the same list shows the same order every 
 - Refine in chat: "limit it to Bengaluru", "only people at Series B companies", "exclude agencies".
 - Ask "export this as CSV". See [working with results](/alpha/working-with-results).
 
+## What to read next
+
+- [Get better results](/alpha/better-results): ten habits from real use, such as naming the kind of company, saying who to leave out and asking why when a number looks wrong.
+- [Prompt library](/alpha/prompt-library): templates and real asks you can copy.
+
 ## Can I edit or redo a message?
 
 Yes. Edit any message (the old version is kept), retry an answer, and flip between versions with the arrows. Copy any answer as Markdown. Start fresh with **New Search**. Your conversations are grouped by day in the history.
@@ -125,14 +134,14 @@ Alpha works on mobile too. History opens from a drawer. The chat rail next to th
 ## Related
 
 <CardGroup cols={2}>
+  <Card title="Get better results" href="/alpha/better-results" icon="bullseye">
+    Ten habits from real use, with examples.
+  </Card>
   <Card title="Finding people" href="/alpha/finding-people" icon="comment">
     Ask well, hire from a JD, or start from example profiles.
   </Card>
   <Card title="Working with results" href="/alpha/working-with-results" icon="table-list">
     Profiles, Not a fit, saving, sharing and export.
-  </Card>
-  <Card title="Prompt library" href="/alpha/prompt-library" icon="book">
-    30+ prompts you can copy.
   </Card>
   <Card title="Kello quickstart" href="/kello/quickstart" icon="paper-plane">
     Send a role to the done-for-you service.

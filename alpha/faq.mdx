@@ -1,8 +1,8 @@
 ---
 title: "Kello Alpha FAQ"
 sidebarTitle: "FAQ"
-description: "Answers to common Kello Alpha questions: downloading results, seeing the full list, refused searches, why someone matched, usage and contact details."
-keywords: ["Kello Alpha FAQ", "Kello Alpha download", "Kello Alpha emails", "Kello Alpha credits", "Kello Alpha refused search", "Kello Alpha questions"]
+description: "Answers to common Kello Alpha questions: full lists, counts, collections, refused searches, connecting Apollo, search times, usage and contact details."
+keywords: ["Kello Alpha FAQ", "Kello Alpha download", "Kello Alpha emails", "connect Apollo to Kello Alpha", "Kello Alpha count wrong", "Kello Alpha search time", "Kello Alpha refused search"]
 icon: "circle-question"
 ---
 
@@ -16,7 +16,7 @@ Yes. Type "export this as CSV" in the chat. Alpha replies with a download link t
 
 ### Why don't I see all N people?
 
-The results page shows 24 people per page. Use the page controls at the bottom to see the rest. A list can hold up to 1,000 people.
+The list in chat is only a preview. Open the full list: the results page shows 100 people per page, with page controls at the bottom. A list can hold up to 1,000 people. See [working with results](/alpha/working-with-results).
 
 ### Why is this person on my list?
 
@@ -25,6 +25,10 @@ Open their profile and look at **N / M matched**. It lists every criterion from 
 ### How do I get rid of people who don't fit?
 
 Click thumbs-down on the profile, say what's off, and choose **Remove from this list**. They leave the list, its exports and every refined version of the search. Alpha reads your reasons on your next message.
+
+### Can I add people to a collection from chat?
+
+No. Select them in the results list, or open a profile, and add them to the collection there. Alpha can then search or share that collection from chat. See [collections](/alpha/working-with-results).
 
 ### Can I sort or filter the results page?
 
@@ -39,6 +43,22 @@ Share a candidate with a public link, save people to a Kello collection, or expo
 ### Why did Alpha refuse my search?
 
 Most likely because it asked for a personal trait. Alpha won't search on religion, caste, ethnicity, gender, sexual orientation, disability, marital status or age. Rephrase around professional history: "prior education or work experience in India" instead of "of Indian origin", or an experience band instead of an age. See [trust](/alpha/usage-limits-and-trust).
+
+### Why does my count look wrong?
+
+Usually because Alpha read a vague word one way and you meant another. "Recently joined" read as "since Jan 2025" left out everyone who joined in 2024. Ask "this seems very low, what did you skip?" and Alpha breaks down what it cut. Then restate the word as a fact, such as "joined since Jan 2024". See [get better results](/alpha/better-results).
+
+### Why did I only get one list?
+
+Alpha shows one list per answer. If you ask for three lists in one message, it builds the first and offers the next. Ask "now the second list" to get it, or send one ask per message. See [get better results](/alpha/better-results).
+
+### Why didn't Alpha find a person I know?
+
+Most often because their profile still shows an old job: profiles lag real life by weeks to months. A first name alone can also match the wrong person. Paste their LinkedIn URL, or give full name and company. See [what's thin in the data](/alpha/usage-limits-and-trust).
+
+### How long does a search take?
+
+A clear first search takes about 1–3 minutes, and each follow-up about a minute. A JD or a fuzzy brief takes 3–10 minutes. Very open briefs take longest, so break them into a clear first ask plus follow-ups. See [timings](/alpha/usage-limits-and-trust).
 
 ### Why are some results not quite what I asked for?
 
@@ -64,11 +84,15 @@ Yes. Alpha keeps working. Come back and the answer is there.
 
 ### Can I get emails or phone numbers?
 
-No. Kello Alpha doesn't provide contact details, in search, lists or exports. Reach people through your own tools. If you want contact details or want someone to reach out for you, send the role to [Kello](/kello/quickstart), the done-for-you service.
+Not from Kello's data, which has no emails or phone numbers. Connect a tool such as Apollo or FullEnrich and Alpha can find work emails for the people you choose. Personal emails and phone numbers are refused, even through a connected tool. Or send the role to [Kello](/kello/quickstart), the done-for-you service.
+
+### Can I connect Apollo?
+
+Yes. Ask "can I connect my Apollo account?" and Alpha sends a secure connect link. Use an Apollo master API key: a normal key connects, but person lookups fail. Never paste API keys into chat. Teams also connect Gmail, FullEnrich, Granola and an ATS. See [connected apps](/alpha/usage-limits-and-trust).
 
 ### Can Alpha send outreach?
 
-No. Alpha finds and researches people. For outreach on a role, Kello's team can reach out on your behalf through the done-for-you service.
+Alpha doesn't run outreach sequences. With Gmail connected, it can draft an email and save it as a Gmail draft once you approve. For outreach on a role, Kello's team can reach out on your behalf through the done-for-you service.
 
 ## Usage
 
@@ -78,7 +102,7 @@ Yes. Your budget measures the AI work Alpha does on your messages, not a count o
 
 ### What if I run out?
 
-Alpha stops with a message. Contact the Kello team at **support@kello.ai** for more. If Alpha doesn't reply at all to a message, check your usage first.
+Alpha stops with a message, sometimes partway through an answer. Contact the Kello team at **support@kello.ai** for more. If Alpha doesn't reply at all to a message, check your usage first.
 
 ### How much does Kello Alpha cost?
 

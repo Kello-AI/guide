@@ -66,6 +66,10 @@ Base URL: `https://guide.kello.ai`. Add `?utm_source=product&utm_medium=<surface
 | "Before I search" clarifying card | Asking well | `/alpha/finding-people` |
 | JD pasted in chat | Hiring from a JD | `/alpha/finding-people` |
 | Results page help | Working with results | `/alpha/working-with-results` |
+| Weak or surprising result (follow-up hint) | Get better results | `/alpha/better-results#if-a-number-looks-wrong-ask-why` |
+| Huge pool (10,000+) shown | Start broad, then narrow | `/alpha/better-results#start-broad-then-narrow` |
+| Connect an app (chat reply) | Connecting apps | `/alpha/usage-limits-and-trust#how-do-i-connect-an-app` |
+| Prompt templates | Templates | `/alpha/prompt-library#templates` |
 | "Not a fit" dialog | Teach Alpha by removing people | `/alpha/working-with-results` |
 | User asks to download | Export as CSV | `/alpha/working-with-results` |
 | Usage page / 50-80-90% emails | Usage and budget | `/alpha/usage-limits-and-trust` |
