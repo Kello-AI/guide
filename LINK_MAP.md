@@ -25,6 +25,14 @@ Base URL: `https://guide.kello.ai`. Add `?utm_source=product&utm_medium=<surface
 | Invoice email | Pricing and billing | `https://kello.ai/pricing` |
 | 3-month expiry notice | What happens after 3 months | `/kello/feedback#what-happens-after-3-months` |
 | Free role used, second role received | Pricing | `https://kello.ai/pricing` |
+| Bounce: request from a personal email | Use your work email | `/kello/troubleshooting#my-request-bounced` |
+| Kello can't read the JD link | Which JD formats work | `/kello/write-a-great-brief#which-jd-formats-work-best` |
+| Kello can't start the role (no responsibilities) | What the JD must include | `/kello/write-a-great-brief#what-must-the-jd-include` |
+| Short list note ("N of M cleared") | Ask what narrowed it | `/kello/your-list#can-i-ask-what-narrowed-the-list` |
+| First list ready email (feedback tip) | Feedback template | `/kello/feedback-playbook#template-feedback-after-a-round` |
+| Outreach questions email | Answer template | `/kello/outreach#is-there-a-template-for-my-answers` |
+| Outreach questions email | Send your pipeline | `/kello/outreach#when-should-i-send-my-pipeline` |
+| Feedback received mid-round | Send feedback in one message | `/kello/feedback#should-i-send-all-my-feedback-at-once` |
 | Email signature (all Kello emails) | Kello Guide | `/` |
 
 ## List page (review UI)
