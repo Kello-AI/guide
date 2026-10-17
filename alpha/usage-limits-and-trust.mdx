@@ -1,16 +1,32 @@
 ---
-title: "Kello Alpha usage, limits and trust"
+title: "Kello Alpha usage, limits, connected apps and trust"
 sidebarTitle: "Usage, limits and trust"
-description: "Kello Alpha has a usage budget per user, gives no contact details or salary data, and never invents facts, discriminates or acts without your click."
-keywords: ["Kello Alpha usage", "Kello Alpha pricing", "Kello Alpha credits", "Kello Alpha limitations", "Kello Alpha contact details", "Kello Alpha ATS search", "Kello Alpha trust", "Kello Alpha fairness", "AI recruiting bias", "Kello Alpha privacy"]
+description: "Kello Alpha has a usage budget per user, connects to Apollo, Gmail and more with your approval, and says what it can't do and what it offers instead."
+keywords: ["Kello Alpha usage", "Kello Alpha connected apps", "connect Apollo to Kello Alpha", "Kello Alpha work emails", "Kello Alpha limitations", "Kello Alpha data gaps", "Kello Alpha trust", "AI recruiting bias"]
 icon: "gauge"
 ---
 
-Kello Alpha has a usage budget per user per cycle, measured by the AI work it does for you, not a count of searches. Kello Alpha doesn't provide emails or phone numbers, benchmark salaries, take file uploads, search your ATS or send outreach, and it makes eight promises the product enforces: it never invents facts, says what it changed, checks its own work, respects your examples, refuses discriminatory searches, exposes no contact data, never acts in your apps without your click, and stays on task.
+Kello Alpha has a usage budget per user, measured by the work it does for you, not a count of searches. Kello's own data has no emails or phone numbers, but you can connect your own tools, such as Apollo, Gmail, FullEnrich and Granola, and Kello Alpha uses them with your approval on every send or write.
+
+<CardGroup cols={2}>
+  <Card title="Usage and budget" icon="gauge" href="#what-uses-my-budget" horizontal />
+  <Card title="Connect an app" icon="plug" href="#how-do-i-connect-an-app" horizontal />
+  <Card title="What Alpha can't do" icon="ban" href="#quick-reference" horizontal />
+  <Card title="Why Alpha refused a search" icon="scale-balanced" href="#5-no-discrimination-by-design" horizontal />
+  <Card title="Gaps in the data" icon="database" href="#is-anything-thin-in-the-data" horizontal />
+</CardGroup>
 
 ## What uses my budget?
 
-The work Alpha does on your messages: reading what you sent, searching, checking its results and writing the answer. It's not a fixed price per search. A simple lookup uses less than a large search with several rounds of checking, or a playbook such as a reference check.
+The work Alpha does on your messages: reading what you sent, searching, checking its results and writing the answer. It's not a fixed price per search. A one-person lookup uses little. A long, open brief with several rounds of checking uses the most.
+
+## How long does an answer take?
+
+A first search takes about 3 minutes; each follow-up takes about 1. Very open briefs ("think creatively …") take longest. Break them into a clear first ask plus short follow-ups. See [get better results](/alpha/better-results#start-broad-then-narrow).
+
+For timings by kind of ask, see [how long does each kind of ask take?](/alpha/better-results#how-long-does-each-kind-of-ask-take)
+
+You can leave the page while Alpha works. The answer keeps running and is there when you come back. **Stop** really stops it and keeps the partial answer.
 
 ## Where do I see my usage?
 
@@ -22,7 +38,9 @@ Yes. Kello emails you when you've used 50%, 80% and 90% of your budget.
 
 ## What happens when I run out?
 
-The answer stops with a message that points you to the Kello team ("I need more searches, contact Kello"). Contact them and they'll sort out more budget.
+The answer stops with a message that points you to the Kello team. Contact them and they'll sort out more budget.
+
+A run can stop partway if the budget runs out mid-answer. When you're close to your limit, ask narrow questions: one company, one place, one follow-up at a time.
 
 <Tip>
 If you send a message and Alpha doesn't reply at all, check your usage under My Account. An empty budget is the most common reason.
@@ -33,135 +51,208 @@ If you send a message and Alpha doesn't reply at all, check your usage under My 
 - **Free accounts** get a small monthly allowance.
 - **Paid plans** are set up by the Kello team and shared across your team.
 
-There's no public price list or self-serve checkout. To get more, or to set up a plan for your team, email **support@kello.ai** or [talk to a person](https://calendly.com/mona-gandhi-kello/ama).
+There's no public price list or self-serve checkout. To get more, or to set up a plan for your team, email [support@kello.ai](mailto:support@kello.ai) or [talk to a person](https://calendly.com/mona-gandhi-kello/ama).
 
 ## How do I make my budget go further?
 
-- **Be specific up front.** A clear first ask saves follow-up rounds. See [finding people](/alpha/finding-people).
+- **Be specific up front.** A clear first ask saves rounds. See [get better results](/alpha/better-results).
 - **Refine the list you have** instead of starting new searches from scratch.
-- **Don't resend while Alpha is working.** Answers keep running even if you close the tab. Come back and the answer is there.
-- **Use stop** if Alpha is heading the wrong way. The partial answer is kept, and you can correct course.
+- **Don't resend while Alpha is working.** Come back and the answer is there.
+- **Use Stop** if Alpha is heading the wrong way, then correct course.
 
 ## Is Kello (done-for-you) part of my Alpha budget?
 
 No. Kello, the done-for-you service, is separate from Alpha usage. See the [Kello quickstart](/kello/quickstart).
 
-## Quick reference
+---
 
-What Kello Alpha can't do yet, and the best way to get each job done today.
+## Which apps can I connect?
 
-| Kello Alpha doesn't | Do this instead |
+Teams have connected **Apollo**, **Gmail**, **FullEnrich** and **Granola** from chat, and an **<Tooltip tip="Applicant tracking system: the software your team uses to track candidates.">ATS</Tooltip>** through a custom connection. Use them for work emails, email drafts and meeting notes, alongside Alpha's search.
+
+## How do I connect an app?
+
+Ask in chat.
+
+<Warning>
+**Apollo needs a master <Tooltip tip="A password-like code that lets one app connect to another.">API key</Tooltip>** for person lookups. A normal key connects, but every lookup then fails. Create a master key in Apollo before you connect.
+</Warning>
+
+A typical flow:
+
+<Steps>
+  <Step title="Ask to connect">
+    ```text Ask to connect wrap
+    can i connect my apollo.io account here?
+    ```
+
+    Alpha sends a secure connect link.
+  </Step>
+  <Step title="Say you've connected">
+    ```text Confirm the connection wrap
+    i have connected Apollo
+    ```
+
+    Alpha confirms it works.
+  </Step>
+  <Step title="Ask for work emails">
+    ```text Find work emails wrap
+    use apollo to find their work emails
+    ```
+
+    Work emails for the people on your list.
+  </Step>
+  <Step title="Ask for a draft">
+    ```text Draft an email wrap
+    can you draft an email to reach out to [name]
+    ```
+
+    A draft in chat.
+  </Step>
+  <Step title="Push it to Gmail">
+    ```text Save as a Gmail draft wrap
+    push this as draft on my email account
+    ```
+
+    Saved as a Gmail draft, after you approve.
+  </Step>
+</Steps>
+
+<Warning>
+Never paste an API key into chat. Alpha refuses it and sends you the secure connect link instead.
+</Warning>
+
+- **Work emails are fine; personal emails and phone numbers are refused**, even through a connected tool.
+- **Anything that sends or writes waits for your approval.** You see what will happen first, and can reject it.
+
+For an ATS, talk to the Kello team at [support@kello.ai](mailto:support@kello.ai). It's set up as a custom connection.
+
+---
+
+## What can't Alpha do, and what does it do instead? {#quick-reference}
+
+What Kello Alpha can't do, and what it offers instead.
+
+| You ask for | What Alpha does instead |
 |---|---|
-| Give emails or phone numbers | Reach people through your own tools, or send the role to Kello (done-for-you) |
-| Benchmark salaries or filter on pay | Give your budget to Kello (done-for-you) as part of a role |
-| Filter on notice period, visa or GPA | Use "open to work" as the nearest signal |
-| Take file uploads | Paste the text, or a link |
-| Search your applicants or ATS | Save people to a Kello collection and search inside it |
-| Send outreach | Use your own tools, or let Kello's team reach out for a role |
-| Remember past conversations | Keep refining in one chat, or restate key points in a new one |
-| Sort, filter or bulk-select on the results page | Ask Alpha in chat |
-| Show an export button | Ask "export this as CSV" |
-| Show public pricing | Talk to the Kello team |
+| People by age, gender, caste, religion or ethnicity | Refuses. Offers a fair stand-in where one exists: "VCs in the Bay Area who studied in India" (63 people) instead of "VCs of Indian origin". |
+| A salary band ("current <Tooltip tip="Cost to company: the total yearly pay package.">CTC</Tooltip> 60–70 <Tooltip tip="Lakhs per annum: yearly pay in Indian rupees (1 lakh = 100,000).">LPA</Tooltip>") | Turns it into a seniority and experience range, and says so |
+| <Tooltip tip="How long someone must keep working at their current job after resigning.">Notice period</Tooltip>, visa status or GPA | Uses "open to work" as the nearest signal |
+| Emails or phone numbers from Kello's data | None stored. Use a connected tool for work emails. |
+| Company events: acquired, filed for IPO, raised last week | Uses the web, or a stand-in such as "led legal through an IPO", and says which |
+| Day-level timing ("quit in the last 7 days") | Job dates are by month, so you get the most recent movers |
+| Adding people to a collection from chat | Add them from the results list |
+| Several lists in one message | Builds the first and offers the next. Ask for one list per message. |
+| File uploads | Paste the text, or a link |
+| Memory of past conversations | Keep refining in one chat, or restate key points in a new one |
+| Sort, filter or bulk select on the results page | Ask Alpha in chat |
+| An export button | Ask `export this as CSV` |
+| Help applying for a job | Says Kello is for hiring teams and points to the company's careers page |
+| Anything that isn't recruiting | One polite line, then an offer to help with hiring |
 
-## Can I get contact details?
+<AccordionGroup>
+  <Accordion title="Can I get contact details?" id="can-i-get-contact-details">
+    Not from Kello's own data, which has no emails or phone numbers. Connect a tool such as Apollo or FullEnrich and ask Alpha to find work emails for the people you choose (see [how to connect](#how-do-i-connect-an-app)). Personal emails and phone numbers are refused. If you want someone to reach out for you, send the role to [Kello](/kello/quickstart).
+  </Accordion>
+  <Accordion title="Can Alpha tell me what someone earns?" id="can-alpha-tell-me-what-someone-earns">
+    No. Salary is rarely in profiles, so Alpha can't benchmark pay or filter on it. If you give a pay band, Alpha turns it into a seniority and experience range and tells you so.
+  </Accordion>
+  <Accordion title="Can I filter on notice period, visa or GPA?" id="can-i-filter-on-notice-period-visa-or-gpa">
+    No. The nearest signal is "open to work", which Alpha can filter on. Check notice period and visa in your first conversation.
+  </Accordion>
+  <Accordion title="Can I upload a JD or résumé?" id="can-i-upload-a-jd-or-résumé">
+    Not as a file. Paste the text, or a link to the job post. Long pastes are fine.
+  </Accordion>
+  <Accordion title="Does Alpha search my applicants or ATS?" id="does-alpha-search-my-applicants-or-ats">
+    Alpha's search runs on Kello's people data and your own Kello collections, not your applicants. Save people to a collection, then ask `search my [collection name] collection for …`. Alpha tells you how many members it can search. To connect an ATS, talk to the Kello team.
+  </Accordion>
+  <Accordion title="Can Alpha send messages for me?" id="can-alpha-send-messages-for-me">
+    Alpha doesn't run outreach sequences. With Gmail connected, it can draft an email and save it as a Gmail draft. Every send or write waits for your approval.
+  </Accordion>
+  <Accordion title="Does Alpha remember my earlier chats?" id="does-alpha-remember-my-earlier-chats">
+    No. Each conversation stands alone. In a new chat, restate what matters: `no agency recruiters, product companies only`.
+  </Accordion>
+  <Accordion title="Can I rename, delete or share a conversation?" id="can-i-rename-delete-or-share-a-conversation">
+    Not today. Share a candidate's public link, a collection, or a <Tooltip tip="A spreadsheet file that opens in Excel or Google Sheets.">CSV</Tooltip> instead.
+  </Accordion>
+  <Accordion title="Can I sort or filter the results page?" id="can-i-sort-or-filter-the-results-page">
+    Not on the page itself. Ask in chat: `only Mumbai`, `drop anyone at a services company`.
+  </Accordion>
+  <Accordion title="How do I see the rest of a long list?" id="how-do-i-see-the-rest-of-a-long-list">
+    Open the full list: the chat shows only a preview. The results page shows 100 people per page. See [how do I see the whole list?](/alpha/working-with-results#how-do-i-see-the-whole-list)
+  </Accordion>
+  <Accordion title="Where is the export button?" id="where-is-the-export-button">
+    There isn't one yet. Ask `export this as CSV` in chat.
+  </Accordion>
+</AccordionGroup>
 
-Not from Kello Alpha. Find the right people in Alpha, then reach them through your own channels. If you want someone to reach out for you, send the role to [Kello](/kello/quickstart); contact details are available there for any candidate you want to reach.
+---
 
-## Can Alpha tell me what someone earns?
+## How does Alpha keep results honest?
 
-No. Alpha doesn't do salary benchmarking or compensation filters. If pay matters for a hire, include your budget when you send the role to Kello (done-for-you).
+Alpha follows eight principles. It never makes up facts, tells you what it changed, checks its own work and stays on task.
 
-## Can I filter on notice period, visa or GPA?
+### 1. It never makes up facts
 
-No. These fields aren't available to search. The nearest signal is "open to work", which Alpha can filter on. Check notice period and visa in your first conversation.
+Lists come from real records. Facts from the web are cited. If Alpha doesn't know something, it says so.
 
-## Can I upload a JD or résumé?
+### 2. It tells you what it changed
 
-Not as a file. Paste the text into the chat, or paste a link to the job post. Long pastes are fine. See [finding people](/alpha/finding-people).
+If a must-have became a nice-to-have to find enough people, Alpha says so. If something can't be filtered on, it says that in plain words and offers the nearest substitute. Read the last sentence of each answer: that's where Alpha says what it assumed.
 
-## Does Alpha search my applicants or ATS?
+### 3. It checks its own work
 
-No. Alpha searches Kello's people data, not your applicants, ATS or talent pool. The only private scope is your own Kello collections. Save people to a collection, then ask "senior engineers in my [collection name] collection". Alpha tells you how many members it can search.
+Before you see any people search, a second review checks the top results against the person you described: what fits, what leaked in, what's missing. Alpha tightens or widens the search, at most twice, then shows you the list.
 
-## Can Alpha send messages for me?
+### 4. Your examples are respected
 
-Alpha doesn't run outreach or sequences. Contact people through your own tools. From chat, you can also connect some of your own tools and ask Alpha to draft or prepare things in them, with your approval on every write (see promise 7 below).
+When you paste LinkedIn profiles as examples in the same message as your ask, a search that would reject any one of them cannot be saved. See [how do I add examples?](/alpha/finding-people#how-do-i-add-examples)
 
-## Does Alpha remember my earlier chats?
+### 5. No discrimination by design
 
-No. Each conversation stands alone. Within a chat, your **Not a fit** removals and reasons sharpen the search. In a new chat, restate what matters: "no agency recruiters, product companies only".
+Alpha refuses searches on religion, caste, ethnicity, gender, sexual orientation, disability, marital status or age. Where a fair substitute exists, it offers one, such as an experience band instead of an age, or "studied or worked in India" instead of "of Indian origin". Searches about a person's private life are declined.
 
-## Can I rename, delete or share a conversation?
+### 6. No contact scraping
 
-Not today. To share results, share a candidate with a public link, save people to a collection, or export the list as CSV.
+Kello's data never exposes emails or phone numbers, not in search, lists or exports. Through a connected tool, Alpha fetches work emails only. Personal emails and phone numbers are refused.
 
-## Can I sort or filter the results page?
+### 7. Nothing happens in your apps without your click
 
-Not on the page itself. Ask in chat: "only Mumbai", "drop anyone at a services company". A follow-up that returns a new list swaps the results in place.
+When you connect your own tools, every send or write shows a **Needs your approval** card with the app, the action and a preview. Nothing happens without your click. **Reject** skips only that action.
 
-## How do I see the rest of a long list?
-
-Lists show 24 people per page. Use the page controls at the bottom of the results page to move through the rest.
-
-## Where is the export button?
-
-There isn't one yet. Ask "export this as CSV" in chat. See [working with results](/alpha/working-with-results).
-
-## 1. It never makes up facts
-
-Lists come from real records. Facts from the web are cited. A person dossier gives one fact and one source per line. If Alpha doesn't know something, it says so.
-
-## 2. It tells you what it changed
-
-If a must-have became a nice-to-have to find enough people, Alpha always says so. If something can't be filtered on, it says that in plain words and offers the nearest substitute. You never have to guess why a list looks the way it does.
-
-## 3. It checks its own work
-
-Before you see any people search, a second AI reviews the top results against the person you described: what fits, what leaked in, what's missing. Alpha tightens or widens the search, at most twice, then shows you the list.
-
-## 4. Your examples are respected
-
-When you paste LinkedIn profiles as examples, a search that would reject any one of them cannot be saved. See [finding people](/alpha/finding-people).
-
-## 5. No discrimination by design
-
-Alpha refuses searches on religion, caste, ethnicity, gender, sexual orientation, disability, marital status or age. Where a fair substitute exists, it offers one, such as an experience band instead of an age.
-
-For example, Alpha declines "VCs of Indian origin". It accepts "VCs in the Bay Area with prior education or work experience in India", which is about professional history, not a personal trait.
-
-## 6. No contact scraping
-
-Kello's data never exposes emails or phone numbers, not in search, lists or exports.
-
-## 7. Nothing happens in your apps without your click
-
-If you connect your own tools from chat, every send or write shows a **Needs your approval** card with the app, the action and a preview. Nothing happens without your click. **Reject** skips only that action.
-
-## 8. It stays on task
+### 8. It stays on task
 
 Alpha does recruiting and talent work only. It ignores instructions hidden inside profiles, job descriptions or web pages, so a pasted document can't redirect it.
 
+---
+
 ## What data does Alpha search?
 
-Alpha searches Kello's data on 830M+ professionals and 57M companies, built from public professional information, plus your own Kello collections when you ask it to. See the [privacy policy](https://kello.ai/privacy-policy).
+Alpha searches Kello's data on 830M+ professionals and 57M companies, built from public professional information, plus live job postings and your own Kello collections when you ask. See the [privacy policy](https://kello.ai/privacy-policy).
 
 ## Is anything thin in the data?
 
-Work history is rich: dates, titles, seniority, tenure, and company stage and size at the time. Skills are listed on only part of profiles, and code or research signals are rare. Describe the work and career rather than leaning on skill keywords alone.
+Work history is rich: dates, titles, seniority, tenure, and company stage and size at the time. Some gaps change how you should phrase an ask:
+
+- **Role descriptions are thin.** Only about a third of past roles have a written description. Asks about what someone did inside a job ("owned retention curves") find fewer people than really exist. Pair them with titles or companies.
+- **Profiles lag.** New jobs show up weeks to months late, so someone who moved recently may still show their old employer. For one person, a LinkedIn URL is the surest way in.
+- **Counts stop at "10,000+".** The review looks at the top of the list, so with a huge pool the ranking does the work. If the top looks off, narrow the pool.
+- **Niche specialties may come back empty.** "Astrodynamics experts in India" found mostly the wrong people. Name the places these people work ("ISRO, Digantara, Skyroot, Pixxel") or their exact titles ("flight dynamics engineer") so Alpha has something firm to search on.
+- **Skills are sparse.** Skills are listed on only part of profiles. Describe the work and career, not only skill keywords.
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="FAQ" href="/alpha/faq" icon="circle-question">
+  <Card title="Better results" href="/alpha/better-results" icon="bullseye" horizontal>
+    Phrase asks around the gaps.
+  </Card>
+  <Card title="FAQ" href="/alpha/faq" icon="circle-question" horizontal>
     Quick answers, including why Alpha refused a search.
   </Card>
-  <Card title="Finding people" href="/alpha/finding-people" icon="comment">
-    Fair ways to describe who you need, in fewer messages.
+  <Card title="Working with results" href="/alpha/working-with-results" icon="table-list" horizontal>
+    Collections, removals and CSV export.
   </Card>
-  <Card title="Working with results" href="/alpha/working-with-results" icon="table-list">
-    Save, share and export as CSV.
-  </Card>
-  <Card title="Kello quickstart" href="/kello/quickstart" icon="paper-plane">
+  <Card title="Quickstart" href="/kello/quickstart" icon="play" horizontal>
     The done-for-you service.
   </Card>
 </CardGroup>

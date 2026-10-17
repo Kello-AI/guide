@@ -14,11 +14,17 @@ Kello doesn't run a filter over job titles. It reads.
 
 With your company. Before it looks at a single candidate, Kello reads what your company does, its history and growth, its current team, and the kind of people it has hired. It learns that last part from the public professional profiles of people who joined you.
 
-That gives Kello a picture of who tends to succeed with you, before your JD says a word.
+That gives Kello a picture of who tends to succeed with you, before your <Tooltip tip="Job description: the document that describes the role.">JD</Tooltip> says a word.
 
 ## How does Kello read a profile?
 
-The way a senior recruiter would: unstructured, for meaning. For each person, Kello looks at what each of their employers actually does, not just the name. It looks at how big each company was, and what stage it was at, when the person joined and when they left. It notices whether they were promoted early compared with their peers, what their team looks like, and what they worked on.
+The way a senior recruiter would: unstructured, for meaning. For each person, Kello looks at:
+
+- What each of their employers actually does, not just the name.
+- How big each company was, and what stage it was at, when the person joined and when they left.
+- Whether they were promoted early compared with their peers.
+- What their team looks like.
+- What they worked on.
 
 For mid-level managers, Kello also looks at how their team performed. For senior roles, it looks at how their org or division performed.
 
@@ -30,15 +36,29 @@ This is an illustrative, fictional work history. It is not a real person.
 
 Say you're hiring a Head of Engineering for a Series B startup. One profile reads:
 
-> Software Engineer at a payments company, 4 years. Senior Software Engineer, then Engineering Manager, at a B2B software company, 4 years. Engineering Manager at a large consumer internet company, 2 years.
+| Company | Role | Years |
+| --- | --- | --- |
+| A payments company | Software Engineer | 4 |
+| A B2B software company | Senior Software Engineer, then Engineering Manager | 4 |
+| A large consumer internet company | Engineering Manager | 2 |
 
-A keyword search sees "Engineering Manager" and stops there.
+<Columns cols={2}>
+  <Card title="A keyword search" icon="magnifying-glass">
+    Sees "Engineering Manager" and stops there.
+  </Card>
+  <Card title="Kello" icon="book-open-reader">
+    Reads further.
 
-Kello reads further. It checks what the payments company does and finds it sells to other businesses, so this person built for business customers from the start. It sees that the payments company had a few dozen people when they joined and several hundred when they left, so they lived through a growth phase. At the B2B software company, they moved from Senior Engineer to Engineering Manager faster than most of their peers there. Kello looks at the team they managed and how it performed.
+    - It checks what the payments company does and finds it sells to other businesses, so this person built for business customers from the start.
+    - It sees that the payments company had a few dozen people when they joined and several hundred when they left, so they lived through a growth phase.
+    - At the B2B software company, they moved from Senior Engineer to Engineering Manager faster than most of their peers there.
+    - Kello looks at the team they managed and how it performed.
+  </Card>
+</Columns>
 
 Then it asks whether this person would say yes. Moving from manager at a large company to Head of Engineering at a growing startup is a step up in title and scope. That makes them worth showing you. If your role were Senior Engineer, Kello would leave them out, because it would be a step down.
 
-On your list, that reading becomes plain words. **Why this candidate** might say they've built for business customers and grown with a company through a scale-up. **Worth checking** might suggest asking whether they still write code day to day.
+On your list, that reading becomes plain words. **Why this candidate** might say they've built for business customers and grown with a company through a scale-up. **<Tooltip tip="The one thing on each candidate Kello suggests you confirm." cta="See the list page" href="/kello/your-list#what-does-each-candidate-show">Worth checking</Tooltip>** might suggest asking whether they still write code day to day.
 
 ## Would they say yes?
 
@@ -54,7 +74,9 @@ Most roles can be done well by people with different backgrounds. Kello looks fo
 
 For engineering and AI roles, yes, when the role calls for it. Kello looks at code shipped on GitHub, research published, models built (for example, on Hugging Face), hackathons and product launches.
 
+<Note>
 Missing accounts are never held against anyone. Plenty of strong engineers have no public code.
+</Note>
 
 ## Does Kello read some roles differently?
 
@@ -64,9 +86,11 @@ Kello takes roles in every function, entry level to C-suite.
 
 ## What does Kello never consider?
 
+<Check>
 Kello never considers age, gender, religion, race, marital status or similar personal traits. If a brief asks for one, Kello uses a professional signal instead, such as an experience range in place of an age.
+</Check>
 
-Kello doesn't search on personal traits. It looks across many kinds of companies, schools and career paths. See [fairness](/kello/trust).
+Kello doesn't search on personal traits. It looks across many kinds of companies, schools and career paths. See [fairness](/kello/trust#what-does-kello-never-consider).
 
 ## Where does the information come from?
 
@@ -75,15 +99,15 @@ Every insight on your list traces back to the candidate's own profile text or Ke
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Your list" icon="list" href="/kello/your-list">
+  <Card title="Your list" icon="list" href="/kello/your-list" horizontal>
     Where this reading shows up.
   </Card>
-  <Card title="Data, privacy and fairness" icon="scale-balanced" href="/kello/trust">
+  <Card title="Data, privacy and fairness" icon="lock" href="/kello/trust" horizontal>
     Professional signals, never personal traits.
   </Card>
-  <Card title="Write a great brief" icon="user-check" href="/kello/write-a-great-brief">
+  <Card title="Write a great brief" icon="pen" href="/kello/write-a-great-brief" horizontal>
     Show Kello who you'd hire.
   </Card>
 </CardGroup>
 
-Send your next role to **source@kello.ai**.
+Send your next role to [source@kello.ai](mailto:source@kello.ai).
