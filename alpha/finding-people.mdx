@@ -1,0 +1,219 @@
+---
+title: "Finding people with Kello Alpha"
+sidebarTitle: "Finding people"
+description: "Describe the person to Kello Alpha like you'd brief a colleague, paste a job description, or add up to 10 LinkedIn profiles of people you'd hire."
+keywords: ["Kello Alpha prompts", "how to search candidates in plain English", "Kello Alpha job description", "source candidates from JD", "find people like this", "lookalike candidates", "career moves search", "exclude companies search", "calibrate candidate search"]
+icon: "comment"
+---
+
+Kello Alpha finds people three ways: from a plain-English description, from a job description, or from LinkedIn profiles of people you'd hire. Describe the person the way you'd brief a colleague, and Kello Alpha reads whole careers, not just current job titles, so say what actually matters.
+
+This page covers the mechanics. For the habits that make the biggest difference, such as naming the kind of company and turning soft words into facts, see [get better results](/alpha/better-results).
+
+<CardGroup cols={2}>
+  <Card title="Describe the person" icon="comment" href="#what-can-i-describe" horizontal />
+  <Card title="Paste a job description" icon="file-lines" href="#how-do-i-give-alpha-a-jd" horizontal />
+  <Card title="Add example profiles" icon="users" href="#when-should-i-use-examples" horizontal />
+</CardGroup>
+
+## What can I describe?
+
+Any mix of these:
+
+- **Role and seniority**: "senior backend engineer", "VP Sales", "Principal or early Partner".
+- **Companies, schools and industries**: "worked at Swiggy", "from the IITs", "B2B SaaS", "product companies, not services".
+- **Experience**: "3–5 years", "12–14 years", "10+ years in a bank or <Tooltip tip="Non-banking financial company: an Indian lender that isn't a bank.">NBFC</Tooltip>".
+- **Company stage**: "early-stage", "unicorn", "YC-backed", "Series B fintechs with 100–500 people".
+- **Location**: cities, regions and aliases all work. Bangalore and Bengaluru, Gurgaon and Gurugram, "Delhi NCR", "Bay Area".
+- **Groups**: "FAANG", "Big 4", "IITs".
+- **Open to work**: Alpha can filter on it.
+
+## How do I describe careers and timing?
+
+This is where Alpha differs most from filter-based tools. It reads career shape:
+
+- **Past jobs**: "previous employer was a bank", "two jobs ago at a consulting firm".
+- **Timing**: "worked at Swiggy between 2014 and 2018", "left Flipkart in the last 6 months".
+- **Stage when they joined**: "joined when the company was under 100 people", "funding stage during their time there was Series A".
+- **Growth and progress**: "promoted twice at the same company", "lived through 3x growth".
+- **Moves**: "left Google for a startup", "moved from Infosys to a product company", "joined Stripe from a bank".
+
+```text Career shape example wrap
+Backend engineers with 3–5 years' experience who've worked at a YC-backed startup, based in Bengaluru
+```
+
+## How do I exclude people?
+
+Say it plainly. Alpha excludes what you name, and only that, so name the look-alikes you'd reject at a glance. See [say who to leave out](/alpha/better-results#say-who-to-leave-out).
+
+```text Exclude past employers wrap
+Engineering managers in Hyderabad who have never worked at TCS or Infosys
+```
+
+```text Exclude a current employer wrap
+ML engineers in London, not currently at Google
+```
+
+## Where does Alpha search?
+
+By default, in your home country. Alpha says so in its answer ("Searched in India"). Reply "search globally" to widen, or name the places you want: "Delhi and Jaipur only", "US and Canada".
+
+## What does Alpha ask me, and why?
+
+At most one question, and only when a wrong guess would waste the search. If you type "engineers from Apple", Alpha may ask which Apple you mean. Otherwise it goes ahead and tells you any assumptions it made, so you can correct them in your next message.
+
+Alpha also uses what it knows about you, such as your title, company and home country, without you having to say it. An investor asking about "people at fintechs" gets people to watch or back. A recruiter gets people to hire.
+
+## What should I avoid?
+
+<Warning>
+**Personal traits.** Alpha won't search on religion, caste, ethnicity, gender, sexual orientation, disability, marital status or age. It offers a fair substitute where one exists, such as an experience band instead of an age. "VCs of Indian origin" is declined; "VCs in the Bay Area who studied in India" works.
+</Warning>
+
+- **Skills alone.** Skills are listed on only part of profiles. Describe the work and career instead: "built payments infrastructure at a fintech" finds more of the right people than a skill keyword.
+- **Fields Alpha can't filter on**: <Tooltip tip="How long someone must keep working at their current job after resigning.">notice period</Tooltip>, visa or work authorisation, salary and GPA. See [usage, limits and trust](/alpha/usage-limits-and-trust#can-i-filter-on-notice-period-visa-or-gpa).
+
+## How do I give Alpha a JD?
+
+Paste the full text into the chat, or paste a link to the job post, and say "find me people for this". Whole <Tooltip tip="Job description: the document that describes the role.">JDs</Tooltip> are normal input, company description and all.
+
+```text Hire from a JD wrap
+Find me people for this:
+[paste the job description or a link to the job post]
+```
+
+Alpha doesn't take file uploads today. If your JD is a PDF or Word file, copy the text in.
+
+## What does Alpha show me first?
+
+Its reading of the role, before anything builds on it. The first reply also points you to [Kello](/kello/quickstart), the done-for-you service, once; then Alpha carries on and searches in the same turn.
+
+- **Must-haves**: what the person truly needs.
+- **Nice-to-haves**: what would help but shouldn't rule anyone out.
+- **Assumptions**: anything Alpha inferred.
+- **The kind of person it's looking for**, in a sentence or two.
+
+<Tip>
+Check this reading. If it's wrong, correct it in your next message: "8 years is a minimum, not a target", "Mumbai only", "this is a Director role".
+</Tip>
+
+## How does Alpha read a JD?
+
+Like a hiring manager, not a keyword matcher. JDs are often wish lists, so Alpha separates what's essential from what's decorative, and looks for people who would succeed in the role, not just people who match the keywords.
+
+- **"Companies like X and Y"** is treated as a hint about the kind of company, not a rule that people must have worked there.
+- **It doesn't invent limits.** Alpha never adds a budget, location or experience cap you didn't give.
+- **It leans toward people likely to say yes.** For a startup role, it favours people at similar or one-step-up companies over people at very large brands who rarely move down.
+
+## How do I get a better JD search?
+
+Four things from real JD runs:
+
+- **Say "must" for the real must-haves.** A CFO JD said "financial services experience". Alpha treated it as a preference, and finance managers from IT-services firms filled the top. "Must have worked at a bank, NBFC or fintech" makes it a filter.
+- **"Preferred" stays a preference.** "Preferably gold loan experience" ranks those people higher but keeps the others. Say "must" when you mean must.
+- **Salary becomes seniority.** Salary isn't filterable, so Alpha turns a band into a seniority and experience range and says so in its answer.
+- **Expect 3 to 10 minutes** for a full JD. Refinements after it take about a minute each: "Candidates from Delhi & Jaipur only", "less than 4 to 5 years of experience".
+
+## When should I use examples?
+
+When you know what good looks like but can't put it into words. Examples are often sharper than a description, because they carry things you might not think to say: the kind of companies, the pace of someone's career, the mix of roles they've held.
+
+They work well for:
+
+- Calibrating a hard role with a hiring manager: "show it three people you'd hire".
+- Finding more founding-team members like two or three you already admire.
+- Building on a person you just hired or backed.
+
+## How do I add examples?
+
+Paste the LinkedIn links into the chat, with a line on what you want. Up to 10 links per ask. You can combine examples with a description or a JD.
+
+Put the links in the same message as the ask. Links from an earlier message don't count toward the check below.
+
+```text Find more like these wrap
+Find more people like these. Based in India, open to a startup.
+https://www.linkedin.com/in/example-one
+https://www.linkedin.com/in/example-two
+https://www.linkedin.com/in/example-three
+```
+
+```text Founding team with examples wrap
+Founding team members (first 10–15 people) from unicorns in India who have left and not yet started their own company. Here are a couple of examples:
+[2–3 LinkedIn links]
+```
+
+## How does Alpha use them?
+
+<Steps>
+  <Step title="Reads every example first">
+    Before it searches.
+  </Step>
+  <Step title="Finds what they share">
+    Career shape, kinds of companies, seniority, timing, location.
+  </Step>
+  <Step title="Spots contradictions">
+    If an example doesn't fit something you said, for example you asked for 10+ years and one example has 6, Alpha tells you so you can decide which matters.
+  </Step>
+  <Step title="Builds the search from what they share">
+    Together with anything you described.
+  </Step>
+  <Step title="Checks every example would pass">
+    This is a hard rule: Alpha will not save a search that would reject one of your examples. If a filter would rule one out, Alpha loosens it and tells you.
+  </Step>
+</Steps>
+
+## How do I refine?
+
+In short follow-ups, each about a minute. Two to four messages is typical:
+
+```text Follow-up: limit the place wrap
+Limit it to India
+```
+
+```text Follow-up: limit the seniority wrap
+Only principals, no founders or partners
+```
+
+```text Follow-up: narrow the list wrap
+Out of the above, show me those in real estate
+```
+
+- **Reply in plain words**: "more B2B SaaS", "no pharma", "must have managed 5+".
+- **If look-alike titles leak in**, say exactly what to drop: "only investing roles, no investor relations".
+- **If a count looks wrong**, ask "what did you leave out?". See [if a number looks wrong, ask why](/alpha/better-results#if-a-number-looks-wrong-ask-why).
+- **Add more examples**, especially ones that differ from each other, so Alpha learns the range of people you'd accept.
+- **Say what to ignore**: "the shared school is a coincidence, don't use it".
+- **Remove people who miss** with **Not a fit** and a reason. Alpha reads your reasons on your next message and offers to change the search if several point the same way. See [how do I remove people who don't fit?](/alpha/working-with-results#how-do-i-remove-people-who-dont-fit)
+
+## When should I send the role to Kello instead?
+
+When you have one open role and you want interested candidates, not a list to work through yourself. Alpha mentions this option once when you paste a JD.
+
+| You want | Use |
+|---|---|
+| To explore the market, try variations, see who's out there | Kello Alpha |
+| A list you'll contact yourself, through your own tools | Kello Alpha |
+| Up to 20 people, each with reasons they fit, in about two hours | Kello (done-for-you) |
+| Someone to reach out and set up first conversations | Kello (done-for-you) |
+| Contact details without connecting your own tools | Kello (done-for-you) |
+
+See the [Kello quickstart](/kello/quickstart).
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Better results" href="/alpha/better-results" icon="bullseye" horizontal>
+    Ten habits from real use, with examples.
+  </Card>
+  <Card title="Prompt library" href="/alpha/prompt-library" icon="lightbulb" horizontal>
+    Templates and copy-ready prompts by use case.
+  </Card>
+  <Card title="Working with results" href="/alpha/working-with-results" icon="table-list" horizontal>
+    Review, remove, save, share and export.
+  </Card>
+  <Card title="Usage, limits and trust" href="/alpha/usage-limits-and-trust" icon="gauge" horizontal>
+    What Alpha can't do yet, and why your examples are respected.
+  </Card>
+</CardGroup>
+
+Send your next role to [source@kello.ai](mailto:source@kello.ai).

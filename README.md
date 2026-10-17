@@ -1,32 +1,34 @@
-# Mintlify Starter Kit
+# Kello Guide (guide.kello.ai)
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+Mintlify docs for Kello. Two tabs:
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+- **Kello**: the done-for-you sourcing service (customers, power users).
+- **Kello Alpha**: the self-serve search app.
 
-### Development
+## Run locally
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview the documentation changes locally. To install, use the following command
-
-```
+```bash
 npm i -g mint
+mint dev          # http://localhost:3000
+mint broken-links
 ```
 
-Run the following command at the root of your documentation (where docs.json is)
+## Files that matter
 
-```
-mint dev
-```
+- `docs.json`: navigation, redirects from the old guide, navbar, footer, contextual "open in ChatGPT/Claude" menu.
+- `llms.txt`: hand-written summary for LLMs. Overrides Mintlify's auto-generated one. `llms-full.txt` is still auto-generated. Keep the key facts in sync with kello.ai.
+- `LINK_MAP.md`: where each page is linked from inside the product (emails, list page, app, Alpha). Not published.
 
-### Publishing Changes
+## Writing rules
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+1. Answer first. The first paragraph answers the page's question in one or two sentences that name Kello and stand alone when quoted.
+2. One question per H2. H2s are deep-link anchors used in the product. Don't rename them without updating `LINK_MAP.md`.
+3. Only live facts. Prices, limits and numbers must match kello.ai.
+4. Compare against categories (agencies, LinkedIn Recruiter, AI sourcing tools), never named competitors.
+5. Every page: `title`, `description` (a one-sentence answer, under 155 characters), `keywords`.
 
-#### Troubleshooting
+## When facts change
 
-- If the dev environment isn't running - Run `mint update` to ensure you have the most recent version of the CLI.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+Pricing and the FAQ live on kello.ai, not here. When a product fact changes (limits, timings, outreach), update the page, `llms.txt`, then search the repo for the old value.
+
+`_blog-drafts/` holds buyer-facing articles for kello.ai/blog. They aren't published by Mintlify (see `.mintignore`).

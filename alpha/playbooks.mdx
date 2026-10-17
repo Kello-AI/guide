@@ -1,0 +1,290 @@
+---
+title: "Kello Alpha playbooks: references, guest lists, founders"
+sidebarTitle: "Playbooks"
+description: "Kello Alpha has built-in playbooks for reference checks, event guest lists, founders, career moves and who worked where, and when."
+keywords: ["Kello Alpha reference check", "backchannel reference", "who to call for a reference", "event guest list builder", "audit invite list", "find stealth founders", "acqui-hire search", "who worked where and when"]
+icon: "rocket"
+---
+
+Kello Alpha has built-in playbooks for three jobs that go beyond a plain search: reference checks, event guest lists, and founders and talent moves. No special words are needed. Kello Alpha recognises the playbook from what you ask and shows the evidence behind each person it suggests.
+
+<CardGroup cols={2}>
+  <Card title="Reference checks" icon="user-check" href="#reference-checks" horizontal />
+  <Card title="Event guest lists" icon="calendar" href="#event-guest-lists" horizontal />
+  <Card title="Founders and talent moves" icon="rocket" href="#founders-and-talent-moves" horizontal />
+</CardGroup>
+
+## Reference checks
+
+Kello Alpha runs a reference check by finding everyone whose recorded time at each employer overlapped with the candidate's in Kello's data, ranking who knew them best, and giving you the 8 best people to call, with a reason for each. It takes about 3 minutes. Alpha also checks the résumé and any references the candidate gave you against those records, and preps you for each call. Public profiles can be incomplete, so treat the list as a strong start, not every possible colleague.
+
+Call the people who actually worked with them, not just the ones they picked.
+
+### A simple reference-check flow
+
+<Steps>
+  <Step title="Find who overlapped">
+    Give Alpha the candidate. Review the 8 people to call, their reasons, and any pairs who moved together.
+  </Step>
+  <Step title="Check the record">
+    Look at any résumé flags. Note what to ask about.
+  </Step>
+  <Step title="Check supplied references">
+    Paste the references the candidate gave you and see which overlaps hold up.
+  </Step>
+  <Step title="Prep each call">
+    Ask `prep me for the call with` each person you'll speak to. Ask for close seconds if you need backups.
+  </Step>
+</Steps>
+
+### How do I start a reference check?
+
+Give Alpha the candidate in any form: a LinkedIn link (the surest way in), name and company, pasted résumé text, or someone from a list you already have.
+
+```text Start a reference check wrap
+I want to do a reference check on https://www.linkedin.com/in/candidate-example
+```
+
+### Who does Alpha suggest I call?
+
+The 8 people who most likely knew the candidate's work, ranked by how closely they worked together:
+
+- **Likely manager**
+- **Peers** on the same team or function
+- **Reports**, if the candidate managed people
+- **Cross-functional partners** they would have worked with
+
+Each person comes with the reason they're on the list, such as the overlap dates and how their roles connected.
+
+<Note>
+**Watch for pairs who moved together.** When a reference followed the candidate from one company to the next, or the other way round, Alpha notes it. People who moved jobs together may be friends or loyal colleagues, so they may not be neutral. Keep them, but balance them with someone who stayed behind.
+</Note>
+
+Kello's data has no contact details. Reach references through your own network, or a tool you've connected (see [connected apps](/alpha/usage-limits-and-trust#how-do-i-connect-an-app)). If someone at your company worked with a reference, the profile's **Connections at your org** section shows that tie.
+
+### Does Alpha check the résumé?
+
+Yes. Alpha compares the résumé against real employment history and flags:
+
+- **Title inflation**: a title on the résumé that's bigger than the one on record.
+- **Shifted dates**: start or end dates that don't line up.
+- **Missing employers**: jobs on record that the résumé leaves out.
+
+<Note>
+Treat each flag as a question to ask, not a verdict. There's often a simple explanation, and profiles can lag real life by weeks or months.
+</Note>
+
+### Can Alpha check the references the candidate gave me?
+
+Yes. Paste the names or links. Alpha checks whether each person actually overlapped with the candidate.
+
+- **No real overlap**: flagged, so you know the claimed working relationship can't be found.
+- **Real but close ties**, such as old batchmates or people who moved companies together: kept, with a "how to ask" note so you can get a candid view.
+
+### How do I prepare for a call?
+
+Name the reference in the same chat:
+
+```text Follow-up: prep a call wrap
+Prep me for the call with [reference name]
+```
+
+In about 10 seconds you get a short call script with up to five questions tailored to how that person worked with the candidate. The questions are built so the answer isn't predictable. You won't get "was she a strong performer?". You'll get questions that draw out specific examples and comparisons.
+
+### Who else could I call?
+
+Ask for the close seconds:
+
+```text Follow-up: close seconds wrap
+Tell me about close seconds whom you considered and rejected and why
+```
+
+Alpha lists the backups it weighed, with the reason each one missed the top 8. Use them when a first-choice reference doesn't reply, or when you want a second view on one employer.
+
+## Event guest lists
+
+Kello Alpha builds guest lists for meetups, dinners and conferences. Paste the event page link (lu.ma links work) or the event blurb, say who you want in the room, and Alpha reads the page, works out the audience and ranks people by fit to the event's topics and by distance to the venue. It can also audit a list you already have.
+
+### How do I build an invite list?
+
+Paste the link or the blurb, then say who you want. A sentence of goal helps more than anything else.
+
+```text Build an invite list wrap
+Can you find me the right people to invite to this event https://lu.ma/[event]
+Goal is to find founders working in deeptech that haven't raised money yet or have just raised early stage
+```
+
+```text Testing meetup invite list wrap
+Who should we invite to our testing meetup in Indiranagar?
+```
+
+Alpha pins down the event, builds a profile of the audience, and searches.
+
+### How does Alpha choose who to invite?
+
+It ranks people on three things:
+
+- **Closeness to the venue**: people who can actually come.
+- **Role fit**: the kind of work the event is about, matched to the topics on the event page.
+- **Company fit**: the kinds of companies you want in the room.
+
+It also respects team-size floors when you set them: "only people at companies with 50+ engineers".
+
+If your company is a product company hosting the event, Alpha can warm up the list using recent job posts. For example: "34 of the top 100 are at companies whose recent job posts mention Playwright." Those are teams already investing in the topic.
+
+### How do I narrow to the room size?
+
+Start broad, then narrow in short follow-ups. Each takes about a minute. A real run for the deeptech founders event above:
+
+| Message | Result |
+|---|---|
+| The lu.ma link plus the goal | 5,169 deeptech founders |
+| "I want people who are currently in bangalore only" | 747 |
+| "Export this as CSV" | a download link |
+
+Other follow-ups that work:
+
+```text Follow-up: narrow to capacity wrap
+Narrow to the top 30. Capacity is 30.
+```
+
+```text Follow-up: narrow by city and topic wrap
+Limit to those currently based in Bangalore and working on topics covered in this edition of the event
+```
+
+For another worked example that goes from 10,000+ to 1,087, see [start broad, then narrow](/alpha/better-results#start-broad-then-narrow).
+
+### Can Alpha check a list I already have?
+
+Yes. Paste the LinkedIn URLs and ask who's worth inviting. Alpha tells you who fits this event and why, so you can trim a long list or spot gaps.
+
+```text Audit an existing invite list wrap
+Here's our current invite list for the AI founders dinner. Who's worth inviting?
+[LinkedIn URLs]
+```
+
+### What do I get at the end?
+
+A saved list of people, plus a <Tooltip tip="A spreadsheet file that opens in Excel or Google Sheets.">CSV</Tooltip> if you ask for one. See [how do I export a list?](/alpha/working-with-results#how-do-i-export-a-list) Kello's data has no emails or phone numbers, so send invites through your own channels or a [connected tool](/alpha/usage-limits-and-trust#how-do-i-connect-an-app).
+
+## Founders and talent moves
+
+Kello Alpha finds founders and founders-to-be, ex-founders and acqui-hired teams, people who made a specific career move, and people who worked at a company in a given window. It shows the evidence behind each person and says how sure it is, because no single signal makes someone a founder.
+
+### What should I define in a founder search?
+
+Alpha has a built-in playbook for founders, so you don't need special wording. You still get a sharper list when you define three things:
+
+- **Which companies count**: unicorns, YC companies, Series A startups, or a named list.
+- **The time window**: "left between Oct 2025 and now". Job dates are stored by month, so give months, not days.
+- **What "founder" means now**: a Founder or Co-founder title, in stealth, or "building something new".
+
+```text Founder search wrap
+People who left a company valued at $1B+ between Oct 2025 and now, and now hold a Founder or Co-founder title at a company founded in 2025 or later
+```
+
+If you leave one of these open, Alpha picks a reading and tells you in the last sentence of its answer. Read it.
+
+### How do I find founders to watch?
+
+Ask in plain words. Real asks that worked:
+
+| Ask | Result |
+|---|---|
+| "Founders that got acquihired in the last 2 years based out of India" | 290 people |
+| "Founding team members of unicorn startups in India … who is currently working there and who has left" | 1,312 people, split 59% still there and 41% left |
+| "Product Managers in India who left their job with at least 4 years of experience … to find founders that have just started" | 4,198 people |
+| Follow-up: "limit it to people who left their product roles after March 2026" | 62 people |
+
+Alpha also covers repeat founders, early employees at breakout companies, operators likely to found something, and people in stealth, such as ex-OpenAI people now in stealth.
+
+### How does Alpha decide someone is a founder?
+
+Carefully. One signal never labels someone a founder. A "stealth" headline only nominates a person. A live product page or real public work confirms them.
+
+Results come in three tiers, **act now**, **warm** and **watch**, and each person shows the evidence that put them there. Start with act now; keep watch for later.
+
+Education is never used as a gate in founder searches.
+
+### Can Alpha find ex-founders and acqui-hires?
+
+Yes. For example:
+
+```text Second-time founders wrap
+Second-time founders in fintech
+```
+
+```text Ex-founders looking for roles wrap
+Ex-founders now looking for roles
+```
+
+There's no "was acquired" field anywhere, so Alpha infers it from evidence: a whole team moving to one company together, the old company shrinking to zero, the founders' own words. It labels how sure it is and never calls something an acquisition on one signal.
+
+### How do I search for career moves?
+
+Describe the move. Alpha understands "from", "to" and timing.
+
+```text Career move: Google to startup wrap
+People who left Google for a startup
+```
+
+```text Career move: Infosys to product wrap
+Engineers who moved from Infosys to a product company
+```
+
+### Who worked where, and when
+
+A named company plus a date range is one of the most reliable asks Alpha handles. It's quick, and the result is easy to check.
+
+| Ask | Result |
+|---|---|
+| "Engineers from Swiggy who worked between 2015 and 2016" | 172 people, in about a minute |
+| "Engineers who worked at Swiggy between 2014 and 2018", then "Show me more people like [one of them]" | 217 Swiggy engineers who went on to found or lead startups |
+| "Show me early engineers of CRED" | 174 people who joined in 2018–2020 |
+
+Say whether you mean people who are there now, or anyone who was there in the window. This is also how reference checks find the people who actually overlapped with a candidate.
+
+### How do I find who worked with whom?
+
+Ask about a person, a company or a time window.
+
+```text Who worked with a candidate wrap
+Who worked with this candidate at their last job? [LinkedIn link]
+```
+
+```text People at a company in a window wrap
+People at Stripe during 2019–2021
+```
+
+### How do I refine a founder search?
+
+Short follow-ups work well:
+
+```text Follow-up: consumer internet CXOs wrap
+Consumer internet only, CXO level
+```
+
+```text Follow-up: VPs and chiefs only wrap
+Only VPs and chiefs. Exclude investors and board members. Flag anyone with entrepreneurial experience.
+```
+
+```text Follow-up: still there or left wrap
+Who is still there and who has left?
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Better results" href="/alpha/better-results" icon="bullseye" horizontal>
+    Habits that make every search sharper.
+  </Card>
+  <Card title="Companies and the market" href="/alpha/companies-and-market" icon="building" horizontal>
+    Team maps, market charts and company lists.
+  </Card>
+  <Card title="Working with results" href="/alpha/working-with-results" icon="table-list" horizontal>
+    Collections, removals and CSV export.
+  </Card>
+  <Card title="Prompt library" href="/alpha/prompt-library" icon="lightbulb" horizontal>
+    More reference-check, event and founder prompts.
+  </Card>
+</CardGroup>
