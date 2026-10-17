@@ -1,0 +1,44 @@
+# Kello Guide
+
+> Kello is an AI sourcing agent for recruiters, founders and lean hiring teams. Email a job description to source@kello.ai and Kello sends a list of up to 20 people who fit the role, each with the reasons they fit, usually in about two hours. You mark Yes, Maybe or No. Kello's team then reaches out to the people you approve on LinkedIn, email and WhatsApp, and gets the interested ones onto your calendar. Kello Alpha is a separate self-serve app for plain-language people and company search. Pricing is on https://kello.ai/pricing.
+
+Key facts (as of October 2026):
+- Product: Kello (also called Kello Picks), a done-for-you AI sourcing service. Built by XXV Century Private Limited, Bengaluru. Founded 2025 by Mona Gandhi and Subramanya Jingade. Backed by Peak XV.
+- How to start: email the JD to source@kello.ai or use https://kello.ai/start. No account needed. One role per email.
+- Lists: up to 20 people per list, only new people each time, up to 5 lists per role over 3 months.
+- Speed: first list in about two hours; most roles have candidates ready to interview within 7 days.
+- Outreach: a named person on Kello's team contacts candidates you mark Yes, then Maybe (never No), from their own accounts, never yours. Kello offers to start outreach after you mark candidates, or you can email Kello to start it. In India most candidates reply on WhatsApp.
+- Coverage: any role, any function, entry level to C-suite; 4,700+ roles sourced in 30+ countries; 836M+ people searchable.
+- Data: customer JDs and feedback are used only for that customer's lists, never to train Kello's algorithms, never shared with other customers.
+- Fairness: Kello never considers age, gender, religion, race, marital status or similar personal traits.
+- Pricing and FAQ: https://kello.ai/pricing and https://kello.ai/faq
+
+## Kello (done-for-you sourcing)
+- [How Kello works](https://guide.kello.ai/kello/how-it-works): every step from brief to first conversation, with timings.
+- [Send your first role](https://guide.kello.ai/kello/quickstart)
+- [Write a great brief](https://guide.kello.ai/kello/write-a-great-brief): what to include, and sharing example profiles.
+- [Brief templates](https://guide.kello.ai/kello/brief-templates): copy-paste briefs by role.
+- [Your list](https://guide.kello.ai/kello/your-list): what each candidate shows, and short lists.
+- [How Kello evaluates candidates](https://guide.kello.ai/kello/how-kello-evaluates): how Kello reads a profile.
+- [Feedback and your next list](https://guide.kello.ai/kello/feedback) and [Feedback playbook](https://guide.kello.ai/kello/feedback-playbook)
+- [How Kello reaches out](https://guide.kello.ai/kello/outreach): starting outreach, who is contacted, what candidates see.
+- [First conversations, references and contact details](https://guide.kello.ai/kello/interviews-and-references)
+- [Your team and ATS](https://guide.kello.ai/kello/team)
+- [Data, privacy and fairness](https://guide.kello.ai/kello/trust)
+- [Troubleshooting](https://guide.kello.ai/kello/troubleshooting)
+- [Contacted by Kello? (for candidates)](https://guide.kello.ai/kello/for-candidates)
+
+## Kello Alpha (self-serve search)
+- [Overview and first search](https://guide.kello.ai/alpha/overview): plain-language search over 830M+ professionals and 57M companies.
+- [Finding people](https://guide.kello.ai/alpha/finding-people): asking well, hiring from a JD, example profiles.
+- [Prompt library](https://guide.kello.ai/alpha/prompt-library)
+- [Playbooks](https://guide.kello.ai/alpha/playbooks): reference checks, event guest lists, founders and talent moves.
+- [Companies and the market](https://guide.kello.ai/alpha/companies-and-market)
+- [Working with results and export](https://guide.kello.ai/alpha/working-with-results)
+- [Usage, limits and trust](https://guide.kello.ai/alpha/usage-limits-and-trust)
+- [FAQ](https://guide.kello.ai/alpha/faq)
+
+## Contact
+- Send a role: source@kello.ai
+- Support: support@kello.ai
+- Website: https://kello.ai

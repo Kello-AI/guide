@@ -1,49 +1,146 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "Kello user guide",
+  "name": "Kello Guide",
+  "description": "How to use Kello, the AI sourcing service for lean hiring teams, and Kello Alpha. Send a role, get up to 20 people with reasons, and meet the ones who say yes.",
   "colors": {
     "primary": "#9b5d98",
     "light": "#f5eff5",
     "dark": "#9b5d98"
   },
   "favicon": "/logo/favicon.png",
+  "logo": {
+    "light": "/logo/kello_guide_logo_light.png",
+    "dark": "/logo/kello_guide_logo_dark.png",
+    "href": "https://kello.ai"
+  },
   "integrations": {
     "posthog": {
-        "apiKey": "phc_Hb71uVDgafiqQ550NqBA144YgmTOtK0AorWCJHIDce8"
+      "apiKey": "phc_Hb71uVDgafiqQ550NqBA144YgmTOtK0AorWCJHIDce8"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "Kello Guide",
+      "og:image": "https://guide.kello.ai/images/hero-light.png",
+      "twitter:site": "@kelloai"
+    }
+  },
+  "search": {
+    "prompt": "Ask about sending a role, your list, outreach, pricing or Alpha"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Pricing",
+        "href": "https://kello.ai/pricing"
+      },
+      {
+        "label": "Sign in",
+        "href": "https://kello.ai/login"
+      },
+      {
+        "label": "Support",
+        "href": "mailto:support@kello.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Send a role, free",
+      "href": "https://kello.ai/start"
     }
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Kello",
+        "icon": "user-check",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Get started",
             "pages": [
-              "index"
+              "index",
+              "kello/quickstart",
+              "kello/how-it-works"
             ]
           },
           {
-            "group": "Platform",
+            "group": "Your brief",
             "pages": [
-              "platform/talent_pool",
-              "platform/analytics",
-              "platform/code_analysis",
-              "platform/search",
-              "platform/data_security"
+              "kello/write-a-great-brief",
+              "kello/brief-templates"
             ]
           },
           {
-            "group": "Integrations",
+            "group": "Your list and feedback",
             "pages": [
-              "integrations/overview",
-              "integrations/claude",
-              "integrations/gmail",
-              "integrations/google_forms",
-              "integrations/linkedin_easy_apply",
-              "integrations/linkedin_outreach",
-              "integrations/ats/overview"
+              "kello/your-list",
+              "kello/how-kello-evaluates",
+              "kello/feedback",
+              "kello/feedback-playbook"
+            ]
+          },
+          {
+            "group": "Outreach and interviews",
+            "pages": [
+              "kello/outreach",
+              "kello/interviews-and-references"
+            ]
+          },
+          {
+            "group": "Team and trust",
+            "pages": [
+              "kello/team",
+              "kello/trust"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "kello/troubleshooting",
+              "kello/for-candidates"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Kello Alpha",
+        "icon": "magnifying-glass",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "alpha/overview",
+              "alpha/finding-people",
+              "alpha/prompt-library"
+            ]
+          },
+          {
+            "group": "Go deeper",
+            "pages": [
+              "alpha/playbooks",
+              "alpha/companies-and-market",
+              "alpha/working-with-results"
+            ]
+          },
+          {
+            "group": "Account and help",
+            "pages": [
+              "alpha/usage-limits-and-trust",
+              "alpha/faq"
             ]
           }
         ]
@@ -52,43 +149,258 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Guide",
-          "href": "https://guide.kello.ai",
-          "icon": "book-open-cover"
+          "anchor": "kello.ai",
+          "href": "https://kello.ai",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://kello.ai/blog",
-          "icon": "newspaper"
+          "anchor": "Pricing",
+          "href": "https://kello.ai/pricing",
+          "icon": "tag"
+        },
+        {
+          "anchor": "Talk to a person",
+          "href": "https://calendly.com/mona-gandhi-kello/ama",
+          "icon": "calendar"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/kello_guide_logo_light.png",
-    "dark": "/logo/kello_guide_logo_dark.png"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@kello.ai"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://kello.ai/app"
+  "redirects": [
+    {
+      "source": "/quickstart",
+      "destination": "/kello/quickstart"
+    },
+    {
+      "source": "/platform/talent_pool",
+      "destination": "/alpha/overview"
+    },
+    {
+      "source": "/platform/analytics",
+      "destination": "/alpha/companies-and-market"
+    },
+    {
+      "source": "/platform/code_analysis",
+      "destination": "/kello/how-kello-evaluates"
+    },
+    {
+      "source": "/platform/search",
+      "destination": "/alpha/overview"
+    },
+    {
+      "source": "/platform/collection",
+      "destination": "/alpha/working-with-results"
+    },
+    {
+      "source": "/platform/filters",
+      "destination": "/alpha/finding-people"
+    },
+    {
+      "source": "/platform/data_security",
+      "destination": "/kello/trust"
+    },
+    {
+      "source": "/integrations/overview",
+      "destination": "/kello/team"
+    },
+    {
+      "source": "/integrations/ats/:slug*",
+      "destination": "/kello/team"
+    },
+    {
+      "source": "/integrations/linkedin_outreach",
+      "destination": "/kello/outreach"
+    },
+    {
+      "source": "/integrations/:slug*",
+      "destination": "/"
+    },
+    {
+      "source": "/api-reference/:slug*",
+      "destination": "/"
+    },
+    {
+      "source": "/essentials/:slug*",
+      "destination": "/"
+    },
+    {
+      "source": "/development",
+      "destination": "/"
+    },
+    {
+      "source": "/kello/example-profiles",
+      "destination": "/kello/write-a-great-brief"
+    },
+    {
+      "source": "/kello/short-or-empty-lists",
+      "destination": "/kello/your-list"
+    },
+    {
+      "source": "/kello/next-lists",
+      "destination": "/kello/feedback"
+    },
+    {
+      "source": "/kello/outreach-setup",
+      "destination": "/kello/outreach"
+    },
+    {
+      "source": "/kello/candidate-experience",
+      "destination": "/kello/outreach"
+    },
+    {
+      "source": "/kello/outreach-status",
+      "destination": "/kello/outreach"
+    },
+    {
+      "source": "/kello/first-conversations",
+      "destination": "/kello/interviews-and-references"
+    },
+    {
+      "source": "/kello/reference-checks",
+      "destination": "/kello/interviews-and-references"
+    },
+    {
+      "source": "/kello/contact-details",
+      "destination": "/kello/interviews-and-references"
+    },
+    {
+      "source": "/kello/ats",
+      "destination": "/kello/team"
+    },
+    {
+      "source": "/kello/billing",
+      "destination": "https://kello.ai/pricing"
+    },
+    {
+      "source": "/kello/what-counts-as-a-role",
+      "destination": "https://kello.ai/pricing"
+    },
+    {
+      "source": "/kello/data-privacy",
+      "destination": "/kello/trust"
+    },
+    {
+      "source": "/kello/fairness",
+      "destination": "/kello/trust"
+    },
+    {
+      "source": "/alpha/first-search",
+      "destination": "/alpha/overview"
+    },
+    {
+      "source": "/alpha/asking-well",
+      "destination": "/alpha/finding-people"
+    },
+    {
+      "source": "/alpha/hire-from-a-jd",
+      "destination": "/alpha/finding-people"
+    },
+    {
+      "source": "/alpha/example-profiles",
+      "destination": "/alpha/finding-people"
+    },
+    {
+      "source": "/alpha/reference-checks",
+      "destination": "/alpha/playbooks"
+    },
+    {
+      "source": "/alpha/event-guest-lists",
+      "destination": "/alpha/playbooks"
+    },
+    {
+      "source": "/alpha/founders-and-talent-moves",
+      "destination": "/alpha/playbooks"
+    },
+    {
+      "source": "/alpha/export",
+      "destination": "/alpha/working-with-results"
+    },
+    {
+      "source": "/alpha/usage",
+      "destination": "/alpha/usage-limits-and-trust"
+    },
+    {
+      "source": "/alpha/limits",
+      "destination": "/alpha/usage-limits-and-trust"
+    },
+    {
+      "source": "/alpha/trust",
+      "destination": "/alpha/usage-limits-and-trust"
+    },
+    {
+      "source": "/kello/faq",
+      "destination": "https://kello.ai/faq"
+    },
+    {
+      "source": "/kello/pricing",
+      "destination": "https://kello.ai/pricing"
+    },
+    {
+      "source": "/learn/for-candidates",
+      "destination": "/kello/for-candidates"
+    },
+    {
+      "source": "/learn/:slug*",
+      "destination": "/"
     }
-  },
+  ],
   "footer": {
     "socials": {
-      "linkedin": "https://www.linkedin.com/company/kello-ai/"
-    }
-  },
-  "seo": {
-    "metatags": {
-      "canonical": "https://guide.kello.ai"
-    }
+      "linkedin": "https://www.linkedin.com/company/kello-ai/",
+      "x": "https://x.com/kelloai"
+    },
+    "links": [
+      {
+        "header": "Kello",
+        "items": [
+          {
+            "label": "Send a role, free",
+            "href": "https://kello.ai/start"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://kello.ai/pricing"
+          },
+          {
+            "label": "FAQ",
+            "href": "https://kello.ai/faq"
+          },
+          {
+            "label": "About",
+            "href": "https://kello.ai/about"
+          }
+        ]
+      },
+      {
+        "header": "Contact",
+        "items": [
+          {
+            "label": "source@kello.ai",
+            "href": "mailto:source@kello.ai"
+          },
+          {
+            "label": "support@kello.ai",
+            "href": "mailto:support@kello.ai"
+          },
+          {
+            "label": "Careers",
+            "href": "mailto:careers@kello.ai"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Privacy policy",
+            "href": "https://kello.ai/privacy-policy"
+          },
+          {
+            "label": "Terms",
+            "href": "https://kello.ai/terms-and-conditions"
+          }
+        ]
+      }
+    ]
   }
 }
