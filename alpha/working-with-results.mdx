@@ -6,7 +6,13 @@ keywords: ["Kello Alpha results page", "why this candidate", "Not a fit", "warm 
 icon: "table-list"
 ---
 
-Every Kello Alpha people search ends in a saved list of up to 1,000 people, shown 100 per page. The list in chat is only a preview, so open the full list to see everyone. Open any profile to see which of your criteria the person matched and the proof for each, remove people who miss with **Not a fit** so the next search gets sharper, and save, share or refine the list in chat. To export, type "export this as CSV" and Kello Alpha replies with a download link.
+Every Kello Alpha people search ends in a saved list of up to 1,000 people, shown 100 per page. The list in chat is only a preview, so open the full list to see everyone. Open any profile to see which of your criteria the person matched and the proof for each, remove people who miss with **Not a fit** so the next search gets sharper, and save, share or refine the list in chat. To export, type `export this as CSV` and Kello Alpha replies with a download link.
+
+<CardGroup cols={2}>
+  <Card title="See the whole list" icon="list" href="#how-do-i-see-the-whole-list" horizontal />
+  <Card title="Remove people (Not a fit)" icon="thumbs-down" href="#how-do-i-remove-people-who-dont-fit" horizontal />
+  <Card title="Export as CSV" icon="file-csv" href="#how-do-i-export-a-list" horizontal />
+</CardGroup>
 
 ## How do I see the whole list?
 
@@ -20,7 +26,9 @@ Lists are frozen when first opened. You and your colleagues see the same people 
 
 No. The people shown in the chat answer are a preview of the top of the list. The count in the answer is the real size of the list. Open the full list to page through everyone.
 
-One recruiter wrote "I don't see 90 investors in the list". All 90 were there; they were on the full results page, not in the chat preview.
+<Callout icon="quote-left" color="#9b5d98">
+**Real example.** One recruiter wrote "I don't see 90 investors in the list". All 90 were there; they were on the full results page, not in the chat preview.
+</Callout>
 
 ## Why is this person on my list?
 
@@ -46,7 +54,7 @@ Warm-intro paths. When someone at your company worked or studied with this perso
     This opens **Not a fit**.
   </Step>
   <Step title="Say what's off (optional)">
-    Answer "What's off about this match?" in a few words: "agency recruiter", "too junior", "services company".
+    Answer "What's off about this match?" in a few words: `agency recruiter`, `too junior`, `services company`.
   </Step>
   <Step title="Remove from this list">
     The person disappears from this list. They stay removed through later refinements and exports.
@@ -61,20 +69,24 @@ Changed your mind? Use **Undo**, or open the removed view and restore the person
 
 Use the chat rail next to the results (**Continue this chat**). A follow-up that returns a new list swaps the results in place.
 
-The results page has no sort, filter or bulk select. Ask Alpha instead: "only people in Mumbai", "drop anyone at a services company", "only people with 10+ years". The chat rail is desktop only; on mobile, refine from the main chat.
+<Info>
+The results page has no sort, filter or bulk select. Ask Alpha instead: `only people in Mumbai`, `drop anyone at a services company`, `only people with 10+ years`.
+</Info>
+
+The chat rail is desktop only; on mobile, refine from the main chat.
 
 ## How do I save and share people?
 
 - **Save to a Kello job or collection** from the profile or the results list, to keep a shared list.
 - **Share a candidate** with a public link from their profile.
 - **Download a profile as PDF.**
-- **Export the whole list as CSV** by asking in chat.
+- **Export the whole list as <Tooltip tip="A spreadsheet file that opens in Excel or Google Sheets.">CSV</Tooltip>** by asking in chat.
 
 ## How do I export a list?
 
 Ask in the same chat as the list:
 
-```text
+```text Export a list wrap
 Export this as CSV
 ```
 
@@ -82,33 +94,50 @@ Alpha returns a download link in about 15 seconds. Open it to save the file, the
 
 There's no export button on the results page today. Asking in chat is the way to do it.
 
-## How long does the link last?
+**Export at a glance**
+
+| Item | Detail |
+|---|---|
+| How to export | Ask in chat. There's no export button on the results page |
+| Link ready in | About 15 seconds |
+| Link lasts | 30 minutes |
+| Rows per file | Up to 5,000 |
+| Columns | Fields from Kello's data. Say which columns you want. Computed columns stay in chat |
+| Company lists | Export the same way |
+| Emails and phone numbers | Never included |
+| People you removed | Left out |
+
+### How long does the link last?
 
 30 minutes, so download the file right away. If the link expires, ask again and Alpha makes a new one.
 
-## Can I choose the columns?
+### Can I choose the columns?
 
 Yes. Say which columns you want, or what to swap.
 
-```text
+```text Export with chosen columns wrap
 Export as CSV with name, current title, current company, location and LinkedIn URL
 ```
 
-The CSV holds fields from Kello's data. Columns Alpha works out during the chat, such as "India team size" or "number of roles they are hiring for" on a company list, appear as a table in chat, not in the CSV file. Copy that table if you need it. See [company lists](/alpha/companies-and-market).
+The CSV holds fields from Kello's data.
 
-## How many rows can I export?
+<Note>
+Columns Alpha works out during the chat, such as "India team size" or "number of roles they are hiring for" on a company list, appear as a table in chat, not in the CSV file. Copy that table if you need it. See [computed columns](/alpha/companies-and-market#computed-columns-show-in-chat-not-in-the-csv).
+</Note>
 
-Up to 5,000 rows per file. For bigger lists, ask for the next slice ("export rows 5,001 to 10,000") and Alpha makes another file.
+### How many rows can I export?
 
-## Can I export company lists?
+Up to 5,000 rows per file. For bigger lists, ask for the next slice (`export rows 5,001 to 10,000`) and Alpha makes another file.
+
+### Can I export company lists?
 
 Yes. Company lists export the same way. Ask for the columns you need, such as headcount, HQ, founded year or funding stage. Computed columns stay in chat, as above.
 
-## Does the file include emails or phone numbers?
+### Does the file include emails or phone numbers?
 
-No. Kello's data has no emails or phone numbers, so lists and exports never include them. If you've connected a tool such as Apollo or FullEnrich, ask Alpha to "use Apollo to find their work emails" for the people you choose. See [connected apps](/alpha/usage-limits-and-trust). Or send the role to [Kello](/kello/quickstart), where contact details are available for candidates you want to reach.
+No. Kello's data has no emails or phone numbers, so lists and exports never include them. If you've connected a tool such as Apollo or FullEnrich, ask Alpha to `use Apollo to find their work emails` for the people you choose. See [connected apps](/alpha/usage-limits-and-trust#how-do-i-connect-an-app). Or send the role to [Kello](/kello/quickstart), where contact details are available for candidates you want to reach.
 
-## What about people I removed?
+### What about people I removed?
 
 People you removed with **Not a fit** are left out of the export, and out of every refined version of the list.
 
@@ -116,11 +145,11 @@ People you removed with **Not a fit** are left out of the export, and out of eve
 
 Yes. Name the collection in your ask:
 
-```text
+```text Search a collection wrap
 Search my fintech collection for senior engineers
 ```
 
-```text
+```text Share collections as a table wrap
 Share my collections as a table
 ```
 
@@ -135,16 +164,16 @@ No. Alpha can't add people to a collection from chat. Select them in the results
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Finding people" href="/alpha/finding-people" icon="comment">
+  <Card title="Finding people" href="/alpha/finding-people" icon="comment" horizontal>
     Refine with better follow-ups.
   </Card>
-  <Card title="Playbooks" href="/alpha/playbooks" icon="rocket">
+  <Card title="Playbooks" href="/alpha/playbooks" icon="rocket" horizontal>
     Reference checks, guest lists and founder searches.
   </Card>
-  <Card title="Usage, limits and trust" href="/alpha/usage-limits-and-trust" icon="circle-info">
+  <Card title="Usage, limits and trust" href="/alpha/usage-limits-and-trust" icon="gauge" horizontal>
     What the results page can't do yet.
   </Card>
-  <Card title="FAQ" href="/alpha/faq" icon="circle-question">
+  <Card title="FAQ" href="/alpha/faq" icon="circle-question" horizontal>
     Why don't I see all N people?
   </Card>
 </CardGroup>

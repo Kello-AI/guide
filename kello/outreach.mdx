@@ -8,6 +8,16 @@ icon: "paper-plane"
 
 Kello reaches out on your behalf to the candidates you approve: everyone you mark **Yes**, then everyone you mark **Maybe**, never anyone you mark **No**. A named person on the Kello team contacts them from their own LinkedIn, email and WhatsApp, checks your must-haves in the conversation, and brings interested people who fit to a first conversation with you.
 
+```mermaid
+flowchart TD
+  A[You mark Yes or Maybe] --> B[You answer Kello's questions]
+  B --> C[A named Kello person messages them]
+  C --> D[Must-haves checked in the conversation]
+  D --> E[Company name shared once they're open]
+  E --> F[Private role page with your JD]
+  F --> G[Calendar booking or email intro]
+```
+
 ## What is the goal of outreach?
 
 To get interested candidates to a first-round conversation with you. The people on your list didn't apply, and most aren't actively looking. Outreach turns a strong profile into a real conversation.
@@ -20,18 +30,30 @@ To get interested candidates to a first-round conversation with you. The people 
 | Maybe | Yes, after your Yes picks |
 | No | Never |
 
-Nobody is contacted until you say yes. If you mark more people Yes later on your list page, Kello contacts them too, with no need to ask again.
+<Check>
+Nobody is contacted until you say yes.
+</Check>
 
-Already know someone, or they're in your pipeline? Tell Kello or mark them No, and they won't be contacted. Best done on day 1: see [sending your pipeline](#when-should-i-send-my-pipeline).
+If you mark more people Yes later on your list page, Kello contacts them too, with no need to ask again.
+
+Already know someone, or they're in your <Tooltip tip="People you're already talking to or interviewing for this role.">pipeline</Tooltip>? Tell Kello or mark them No, and they won't be contacted. Best done on day 1: see [sending your pipeline](#when-should-i-send-my-pipeline).
 
 ## How do I start outreach?
 
 There are two ways:
 
 - **Kello asks you.** Once you've marked candidates, Kello replies on your email thread offering to reach out, with a few quick questions.
-- **You ask Kello.** Email Kello any time, for example: "Please start outreach for the people I marked Yes and Maybe." Kello replies with the same questions.
+- **You ask Kello.** Email Kello any time, for example:
+
+  ```text wrap
+  Please start outreach for the people I marked Yes and Maybe.
+  ```
+
+  Kello replies with the same questions.
 
 Either way, nobody is contacted until you've answered the required questions below.
+
+---
 
 ## What does Kello ask?
 
@@ -39,27 +61,31 @@ Before Kello contacts anyone, it asks you a few quick things. One short reply co
 
 ### Required
 
-| Question | Why it matters |
-| --- | --- |
-| What should happen when a candidate is interested? | Share a calendar link, or name the person (or people) Kello should introduce candidates to by email. |
-| What must every candidate meet? | Notice period, max salary, location, office days, visa. Kello checks these in the conversation and only brings you people who fit. |
-| Anyone not to contact? | People you already know, people in your pipeline, or companies to keep out of it. |
+<Badge color="blue">Required</Badge>
 
-If one required answer is missing, Kello asks for it before starting. "None" is a fine answer to the last one.
+| # | Question | Why it matters |
+| --- | --- | --- |
+| 1 | What should happen when a candidate is interested? | Share a calendar link, or name the person (or people) Kello should introduce candidates to by email. |
+| 2 | What must every candidate meet? | <Tooltip tip="How long someone must keep working at their current job after resigning.">Notice period</Tooltip>, max salary, location, office days, visa. Kello checks these in the conversation and only brings you people who fit. |
+| 3 | Anyone not to contact? | People you already know, people in your pipeline, or companies to keep out of it. |
+
+If one required answer is missing, Kello asks for it before starting. `None` is a fine answer to the last one.
 
 ### Optional
 
-| Question | Why it matters |
-| --- | --- |
-| Your pitch | The team, the manager, funding, the problems to solve. Kello builds these into each message. |
-| Can the salary range be shared? | If yes, Kello shares it. If not, Kello asks each candidate's expectation and moves ahead if it fits your range. |
-| Topics to avoid | Anything candidates shouldn't hear from Kello before they talk to you. |
+<Badge color="gray">Optional</Badge>
+
+| # | Question | Why it matters |
+| --- | --- | --- |
+| 4 | Your pitch | The team, the manager, funding, the problems to solve. Kello builds these into each message. |
+| 5 | Can the salary range be shared? | If yes, Kello shares it. If not, Kello asks each candidate's expectation and moves ahead if it fits your range. |
+| 6 | Topics to avoid | Anything candidates shouldn't hear from Kello before they talk to you. |
 
 ## Is there a template for my answers?
 
 Yes. Copy this, fill in the brackets, and reply on the thread. Numbered lines make it easy to match each answer to its question.
 
-```text
+```text Outreach answers template wrap
 1. When a candidate is interested: calendar link [URL], or intro by email to [name, email]
 2. Must-haves: max salary [amount], notice [N] days or less, based in or willing to move to [city], [office days], [visa]
 3. Don't contact: [names, LinkedIn links or companies] (or "none")
@@ -71,7 +97,7 @@ Also check: [anything to screen for, e.g. expected pay within budget]
 
 ## Example reply
 
-```text
+```text Example reply wrap
 Calendar: https://cal.example.com/priya-30min - Priya (Engineering Manager) takes first calls.
 
 Must-haves:
@@ -91,7 +117,11 @@ Salary: OK to share 35-45 LPA fixed plus ESOPs.
 Avoid: don't discuss the upcoming product launch.
 ```
 
-A shorter reply works too. "Calendar link is X, notice under 60 days, Bangalore only, don't contact anyone at Y" is enough to start.
+A shorter reply works too. This is enough to start:
+
+```text Shorter reply wrap
+Calendar link is X, notice under 60 days, Bangalore only, don't contact anyone at Y
+```
 
 ## How have other teams answered?
 
@@ -99,17 +129,23 @@ Short, plain answers work. Three real replies, anonymised:
 
 - **Founder, Forward Deployed Engineer:** "Don't share salary. Intro by email, plus book a call through [calendar link]. Must be able to start on-site soon, at a manufacturing plant." For who not to contact: "None."
 - **CTO, DevOps Engineer:** "[Calendar link]. Don't mention anything comp related. Notice ideally 30 days, but not a hard no. Pitch: work directly with the CTO; we recently raised a Series A extension."
-- **HR head, VP Distribution:** "Introduce them to me by email. Maximum salary 60 LPA. Notice period 90 days or less. Current or preferred location Bangalore."
+- **HR head, VP Distribution:** "Introduce them to me by email. Maximum salary 60 <Tooltip tip="Lakhs per annum: yearly pay in Indian rupees (1 lakh = 100,000).">LPA</Tooltip>. Notice period 90 days or less. Current or preferred location Bangalore."
 
+<Tip>
 The CTO's "ideally 30 days, but not a hard no" is worth copying: it tells Kello which must-have can bend.
+</Tip>
 
 ## Do I have to give a calendar link?
 
-No. With a calendar link, each interested candidate books a first conversation directly with whoever takes it. Without one, Kello introduces the candidate by email to the person taking the hire forward. Kello connects candidates only with the people you name. See [first conversations](/kello/interviews-and-references).
+No. With a calendar link, each interested candidate books a first conversation directly with whoever takes it. Without one, Kello introduces the candidate by email to the person taking the hire forward. Kello connects candidates only with the people you name. See [first conversations](/kello/interviews-and-references#calendar-link-or-email-intro).
 
 ## Who receives introductions?
 
-Whoever you name. It can be one person or several: the hiring manager, two recruiters, a founder. Say how you want it, for example "connect each candidate to both recruiters, one candidate per email."
+Whoever you name. It can be one person or several: the hiring manager, two recruiters, a founder. Say how you want it, for example:
+
+```text wrap
+Connect each candidate to both recruiters, one candidate per email.
+```
 
 If you'd rather contact candidates yourself, say so up front. See [contacting a candidate yourself](#can-i-contact-a-candidate-myself).
 
@@ -117,7 +153,31 @@ If you'd rather contact candidates yourself, say so up front. See [contacting a 
 
 Specifics a candidate would care about. "Fast-growing startup" says little. "Series A, 30 people, you'd be the third engineer on the data team" gives Kello something to work with.
 
-Keep it short. In India the first message usually goes out on WhatsApp, where a few lines land better than a long paragraph. "Standard, as per the JD" is a fine answer too: Kello builds the message from your JD.
+Keep it short. In India the first message usually goes out on WhatsApp, where a few lines land better than a long paragraph. `Standard, as per the JD` is a fine answer too: Kello builds the message from your <Tooltip tip="Job description: the document that describes the role.">JD</Tooltip>.
+
+## Should I share the salary range?
+
+It's your call. Sharing it lets candidates decide faster, and Kello shares it. Not sharing it is fine too: Kello asks each candidate's expectation and moves ahead only if it fits your range.
+
+To keep it confidential, say `don't share the salary range`.
+
+<Callout icon="quote-left" color="#9b5d98">
+**Real example.** Kello replied to one team: *"We only use the range internally to calibrate seniority and benchmark the search, and it won't be disclosed to candidates."*
+</Callout>
+
+## When should I send my pipeline?
+
+On day 1, with your outreach answers or earlier. Paste the names (LinkedIn links help) of people you've already spoken to, people in your interview process, and past outreach that didn't work out. Kello checks them against your list and keeps them out of outreach. This matters most for agencies and long-running searches.
+
+<Callout icon="quote-left" color="#9b5d98">
+**Real example.** An HR team sent the names of 20 people they had already approached. Six of them were already on the 20-person list, so Kello kept them out of outreach, leaving 14 people new to the team. Another team found out after outreach began that several candidates were already in their own database. Sending the pipeline up front avoids that.
+</Callout>
+
+## Can Kello screen for specific things?
+
+Yes. Beyond your must-haves, name any topic Kello should check in the conversation, such as `check current and expected pay are within 30 LPA` or `ask about hands-on experience with [product category]`. Add these to your outreach answers, or reply later; Kello checks them from then on.
+
+---
 
 ## Who sends the messages?
 
@@ -129,7 +189,11 @@ A real person stands behind every conversation. AI gives them context on each ca
 
 In India, most candidates reply on WhatsApp. Elsewhere, Kello reaches out on LinkedIn and email. Outreach works outside India too.
 
-Have a preference? Say so, for example "start on WhatsApp; if that doesn't connect, try LinkedIn."
+Have a preference? Say so, for example:
+
+```text wrap
+Start on WhatsApp; if that doesn't connect, try LinkedIn.
+```
 
 ## What does the first message say?
 
@@ -151,33 +215,25 @@ Your must-haves, such as notice period, salary, location, office days or visa, a
 
 Candidates can ask questions. The Kello team member answers from your brief and pitch, and checks with you before replying to anything else. Kello never makes up answers.
 
-## Can Kello screen for specific things?
-
-Yes. Beyond your must-haves, name any topic Kello should check in the conversation, such as "check current and expected pay are within 30 LPA" or "ask about hands-on experience with [product category]". Add these to your outreach answers, or reply later; Kello checks them from then on.
-
 ## Does Kello know a candidate's current pay?
 
 No. Public profiles don't list pay, so Kello can't filter on current salary or confirm it in advance. Kello uses your budget to judge the right seniority when it builds your list.
 
-Current pay, expected pay and notice period come out in the outreach conversation. Before your first call, you know what the candidate shared. See [what you know before the call](/kello/interviews-and-references).
+Current pay, expected pay and notice period come out in the outreach conversation. Before your first call, you know what the candidate shared. See [what you know before the call](/kello/interviews-and-references#what-do-i-know-before-the-call).
 
-## Should I share the salary range?
-
-It's your call. Sharing it lets candidates decide faster, and Kello shares it. Not sharing it is fine too: Kello asks each candidate's expectation and moves ahead only if it fits your range.
-
-To keep it confidential, say "don't share the salary range". Kello replied to one team: *"We only use the range internally to calibrate seniority and benchmark the search, and it won't be disclosed to candidates."*
-
-## When should I send my pipeline?
-
-On day 1, with your outreach answers or earlier. Paste the names (LinkedIn links help) of people you've already spoken to, people in your interview process, and past outreach that didn't work out. Kello checks them against your list and keeps them out of outreach. This matters most for agencies and long-running searches.
-
-<Note>
-**Real example.** An HR team sent the names of 20 people they had already approached. Six of them were already on the 20-person list, so Kello kept them out of outreach, leaving 14 people new to the team. Another team found out after outreach began that several candidates were already in their own database. Sending the pipeline up front avoids that.
-</Note>
+---
 
 ## Can I take someone off the list later?
 
-Yes, as long as Kello hasn't contacted them yet. Reply with the name, or mark them No on your list page. One hiring manager wrote "actually, don't worry about [candidate] unless you've already contacted them." Kello replied: *"I have not contacted him… I will not contact him."*
+Yes, as long as Kello hasn't contacted them yet. Reply with the name, or mark them No on your list page.
+
+<Callout icon="quote-left" color="#9b5d98">
+**Real example.** One hiring manager wrote "actually, don't worry about [candidate] unless you've already contacted them." Kello replied: *"I have not contacted him… I will not contact him."*
+</Callout>
+
+## Can I change what candidates hear?
+
+Anytime. Reply with the change: `mention the ESOPs`, `ask about night shifts`, `notice period can go to 90 days`, `office days can be two, not three`. Kello updates what candidates hear from then on.
 
 ## What happens when a candidate is interested?
 
@@ -190,7 +246,13 @@ See [first conversations, references and contact details](/kello/interviews-and-
 
 ## How do I get an update?
 
-Reply to Kello and ask. "Where are we on outreach?" is enough. Ask whenever it's useful, for example before a hiring sync. Kello groups every candidate it has contacted:
+Reply to Kello and ask. This is enough:
+
+```text wrap
+Where are we on outreach?
+```
+
+Ask whenever it's useful, for example before a hiring sync. Kello groups every candidate it has contacted:
 
 | Status | What it means |
 | --- | --- |
@@ -214,27 +276,23 @@ Kello stays in touch with candidates who pass, in case they change their mind.
 
 Yes. Ask Kello for their contact details.
 
-Tell Kello when you reach out, so the candidate hears from one of you, not both. See [contact details](/kello/interviews-and-references).
-
-## Can I change what candidates hear?
-
-Anytime. Reply with the change: "mention the ESOPs", "ask about night shifts", "notice period can go to 90 days", "office days can be two, not three". Kello updates what candidates hear from then on.
+Tell Kello when you reach out, so the candidate hears from one of you, not both. See [contact details](/kello/interviews-and-references#how-do-i-get-contact-details).
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="First conversations and references" href="/kello/interviews-and-references" icon="calendar">
+  <Card title="Interviews and references" href="/kello/interviews-and-references" icon="calendar" horizontal>
     Calendar link or email intro, references, contact details.
   </Card>
-  <Card title="Your list" href="/kello/your-list" icon="table-list">
+  <Card title="Your list" href="/kello/your-list" icon="list" horizontal>
     Mark Yes, Maybe or No.
   </Card>
-  <Card title="Giving feedback" href="/kello/feedback" icon="comments">
+  <Card title="Feedback and next lists" href="/kello/feedback" icon="comments" horizontal>
     How reasons sharpen the next list.
   </Card>
-  <Card title="Were you contacted by Kello?" href="/kello/for-candidates" icon="hand">
+  <Card title="For candidates" href="/kello/for-candidates" icon="handshake" horizontal>
     The page for candidates.
   </Card>
 </CardGroup>
 
-Send your next role to **source@kello.ai**.
+Send your next role to [source@kello.ai](mailto:source@kello.ai).

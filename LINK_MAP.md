@@ -63,17 +63,18 @@ Base URL: `https://guide.kello.ai`. Add `?utm_source=product&utm_medium=<surface
 |---|---|---|
 | Welcome screen | Get started with Alpha | `/alpha/overview` |
 | Empty search box hint | Prompt library | `/alpha/prompt-library` |
-| "Before I search" clarifying card | Asking well | `/alpha/finding-people` |
-| JD pasted in chat | Hiring from a JD | `/alpha/finding-people` |
+| "Before I search" clarifying card | Asking well | `/alpha/finding-people#what-does-alpha-ask-me-and-why` |
+| JD pasted in chat | Hiring from a JD | `/alpha/finding-people#how-do-i-give-alpha-a-jd` |
 | Results page help | Working with results | `/alpha/working-with-results` |
 | Weak or surprising result (follow-up hint) | Get better results | `/alpha/better-results#if-a-number-looks-wrong-ask-why` |
 | Huge pool (10,000+) shown | Start broad, then narrow | `/alpha/better-results#start-broad-then-narrow` |
 | Connect an app (chat reply) | Connecting apps | `/alpha/usage-limits-and-trust#how-do-i-connect-an-app` |
 | Prompt templates | Templates | `/alpha/prompt-library#templates` |
-| "Not a fit" dialog | Teach Alpha by removing people | `/alpha/working-with-results` |
-| User asks to download | Export as CSV | `/alpha/working-with-results` |
-| Usage page / 50-80-90% emails | Usage and budget | `/alpha/usage-limits-and-trust` |
-| Refused search (protected attribute) | Why Alpha refused | `/alpha/usage-limits-and-trust` |
+| "Not a fit" dialog | Teach Alpha by removing people | `/alpha/working-with-results#how-do-i-remove-people-who-dont-fit` |
+| User asks to download | Export as CSV | `/alpha/working-with-results#how-do-i-export-a-list` |
+| Usage page | Usage and budget | `/alpha/usage-limits-and-trust` |
+| 50-80-90% usage emails | Before you run out | `/alpha/usage-limits-and-trust#will-i-be-warned-before-i-run-out` |
+| Refused search (protected attribute) | Why Alpha refused | `/alpha/usage-limits-and-trust#5-no-discrimination-by-design` |
 | JD in Alpha → suggest done-for-you | Let Kello do it | `/kello/quickstart` |
 
 ## Candidate-facing (role page)
